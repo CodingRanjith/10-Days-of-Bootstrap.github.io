@@ -19,11 +19,11 @@
 </div>
 
 
-[Day 1 >>](./Day-01/readme.md)
+[Day 1 >>](https://codingranjith.github.io/10-Days-of-Bootstrap.github.io/Day-01/)
 
 | # Day |                                                           Topics                                                            |
 | ----- | :-------------------------------------------------------------------------------------------------------------------------: |
-| 01-Aug-2023 | [Introduction](./Day-01/#Introduction) , [Container](./Day-01/#container) , [Grid System](./Day-01/#Grid-system) , [Breakpoint](./Day-01/#breakpoint) , [Columns](./Day-01/#Columns)  |
+| 01-Aug-2023 | [Introduction](https://codingranjith.github.io/10-Days-of-Bootstrap.github.io/Day-01/#Introduction) , [Container](https://codingranjith.github.io/10-Days-of-Bootstrap.github.io/Day-01/#container) , [Grid System](https://codingranjith.github.io/10-Days-of-Bootstrap.github.io/Day-01/#Grid-system) , [Breakpoint](https://codingranjith.github.io/10-Days-of-Bootstrap.github.io/Day-01/#breakpoint) , [Columns](https://codingranjith.github.io/10-Days-of-Bootstrap.github.io/Day-01/#Columns)  |
 | 02-Aug-2023 | [Margin](./Day-02/readme.md#) , [Padding](./Day-01/readme.md#) , [Gutter](./Day-01/readme.md#) , [Border](./Day-01/readme.md#) , [Border Radius](./Day-01/readme.md#)  |
 | 03-Aug-2023 | [TypoGraphy](./Day-02/readme.md#) , [Images](./Day-01/readme.md#) , [Image Gallery](./Day-01/readme.md#) , [Figures](./Day-01/readme.md#) , [Tables](./Day-01/readme.md#)  |
 | 04-Aug-2023 | [Buttons](./Day-02/readme.md#) , [Buttons Group](./Day-01/readme.md#) , [Button Group with Dropdown](./Day-01/readme.md#) , [Glyphicons](./Day-01/readme.md#) |
