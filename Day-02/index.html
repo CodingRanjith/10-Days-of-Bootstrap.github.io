@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <title>Day 2 in Bootstrap - Coding Ranjith</title>
+
+    <style>
+      [class^="col"] > * {
+        background-color: rgba(14, 209, 235, 0.15);
+        border: 1px solid rgba(63, 11, 167, 0.3);
+      }
+
+      #border .row{
+      background-color:  darkslategray;
+      margin-bottom: 10px;
+    } 
+     #border .row div{
+      background: #333;
+      color:#fff;
+    }
+
+    #border-radius .col-auto{
+      height: 100px;
+      width: 100px;
+      color:white;
+      text-align: center;
+    }
+
+   #border-radius .pill{
+      width: 200px !important;
+    }
+    </style>
+
+  </head>
+  <body style="background-color: #fff;">
+
+    <center><h1 style="color: red; text-transform: uppercase;" >Day 2 in Bootstrap - Coding Ranjith</h1></center><hr>
+
+    <center>
+      <button class="btn btn-success btn-sm"><a href="#margin" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Margin</a></button>
+      <button class="btn btn-danger btn-sm"><a href="#padding" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Padding</a></button>
+      <button class="btn btn-primary btn-sm"><a href="#gutter" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Gutter</a></button>
+      <button class="btn btn-secondary btn-sm"><a href="#border" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Border</a></button>
+      <button class="btn btn-info btn-sm"><a href="#border-radius" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Border Radius</a></button>
+    </center>
+
+<hr>    
+
+<!--Margin-->
+
+<div class="container" id="margin">
+
+  <center><h1 style="color: blue; text-transform: uppercase;" >Margin</h1></center><hr>
+
+  <h2>Margin</h2>
+
+<p class="para">In Bootstrap 5, margin classes are used to control the spacing and layout of elements. Margin classes allow you to add or remove margin space around elements in your HTML markup, which helps you achieve proper spacing and alignment in your web design. Margin classes in Bootstrap 5 are part of the built-in spacing system, which provides a consistent and responsive way to manage the space between elements.</p>
+<p class="para">Bootstrap 5 provides margin classes with various predefined values, allowing you to apply margin space in different directions (top, bottom, left, right) and at different breakpoints (e.g., small, medium, large, extra-large) depending on your design requirements. Margin classes in Bootstrap 5 are typically used in conjunction with other Bootstrap utility classes to create responsive and well-organized layouts.</p>
+<p class="para">Margin classes in Bootstrap 5 follow a specific naming convention, which consists of two parts: <b>m</b> for margin, followed by the direction (<b>t</b> for top, <b>b</b> for bottom, <b>l</b> for <b>left</b>,<b> r</b> for <b>right</b>), and an optional suffix for breakpoint size (<b>-sm, -md, -lg, -xl</b>) to specify the desired margin space at different screen sizes. The available margin classes in Bootstrap 5 are:</p>
+   <ul class="points">
+		<li><b>m-{direction}:</b> Applies margin space in the specified direction (e.g.,<b> m-t</b> for top margin,<b> m-b</b> for bottom margin, <b>m-l</b> for left margin,<b> m-r</b> for right margin).</li>
+		<li><b>m-{direction}-{breakpoint}: </b>Applies margin space in the specified direction at the specified breakpoint size (e.g., <b>m-t-md </b>for top margin at medium breakpoint, <b>m-b-lg</b> for bottom margin at large breakpoint).</li>
+		<li><b>m-{direction}-auto: </b>Applies auto margin space in the specified direction, which is often used to center elements horizontally or vertically.</li>
+   </ul>
+   <p class="para">Note that margin classes in Bootstrap 5 should be used responsibly to ensure a balanced and visually appealing design, and it's recommended to follow the Bootstrap documentation and best practices for proper usage.</p>
+
+ <div class="contaniner">
+
+ <div class="row" style="background-color: rgb(79, 241, 15); color: #fff; margin-bottom: 10px;">
+    <div class="col-6" style="background-color: blue;">Without Margin column 6</div>
+  </div>
+
+  <div class="row" style="background-color: rgb(79, 241, 15); color: #fff; margin-bottom: 10px;">
+    <div class="col-6 m-3" style="background-color: blue;">Margin m-3 column 6</div>
+  </div>
+
+  <div class="row" style="background-color: rgb(79, 241, 15); color: #fff; margin-bottom: 10px;">
+    <div class="col-6 mt-3" style="background-color: blue;">Margin-top mt-3 column 6</div>
+  </div>
+
+  <div class="row" style="background-color: rgb(79, 241, 15); color: #fff; margin-bottom: 10px;">
+    <div class="col-6 mb-3" style="background-color: blue;">Margin-Bottom mb-3 column 6</div>
+  </div>
+
+  <div class="row" style="background-color: rgb(79, 241, 15); color: #fff; margin-bottom: 10px;">
+    <div class="col-6 ms-3" style="background-color: blue;">Margin-start ms-3 column 6</div>
+  </div>
+  <div class="row" style="background-color: rgb(79, 241, 15); color: #fff; margin-bottom: 10px;">
+    <div class="col-6 me-3" style="background-color: blue;">Margin-end me-3 column 6</div>
+  </div>
+ <div class="row" style="background-color: rgb(79, 241, 15); color: #fff; margin-bottom: 10px;">
+    <div class="col-6 mx-3" style="background-color: blue;">Margin mx-3 column 6</div>
+  </div>
+  <div class="row" style="background-color: rgb(79, 241, 15); color: #fff; margin-bottom: 10px;">
+    <div class="col-6 my-3" style="background-color: blue;">Margin my-3</div>
+  </div>
+  <div class="row" style="background-color: rgb(79, 241, 15); color: #fff; margin-bottom: 10px;">
+    <div class="col-6 m-lg-5 m-2" style="background-color:blue;">Margin m-2</div>
+  </div>
+
+</div>
+
+<hr>
+
+<!--Padding-->
+
+<div class="container" id="padding">
+
+  <center><h1 style="color: blue; text-transform: uppercase;" >Padding</h1></center><hr>
+
+  <h2>Padding</h2>
+
+
+  <p class="para">In Bootstrap, padding classes are used to control the spacing around elements, providing consistent and responsive padding for web page layouts. Padding is the space between the content of an element and its border. Bootstrap provides a set of predefined padding utility classes that can be applied to various HTML elements to easily add padding in a consistent manner across the website.</p>
+  <p class="para">Padding classes in Bootstrap are typically applied using the<b> p-{size}</b> class, where <b>{size}</b> represents a number from 0 to 5, indicating the size of the padding. The available padding sizes in Bootstrap are:</p>
+    <ul class="points">
+      <li><b>p-0: </b>No padding (0)</li>
+      <li><b>p-1: </b>Extra small padding (0.25rem or 4 pixels)</li>
+      <li><b>p-2: </b>Small padding (0.5rem or 8 pixels)</li>
+      <li><b>p-3: </b>Medium padding (1rem or 16 pixels)</li>
+      <li><b>p-4: </b>Large padding (1.5rem or 24 pixels)</li>
+      <li><b>p-5: </b>Extra large padding (3rem or 48 pixels)</li>
+    </ul>
+    <p class="para">In addition to the numerical padding classes, Bootstrap also provides directional padding classes that allow you to specify padding for specific sides of an element. These classes include:</p>
+    <ul class="points">
+      <li><b>pt-{size}:</b> Padding top</li>
+      <li><b>pb-{size}:</b> Padding bottom</li>
+      <li><b>pl-{size}:</b> Padding left</li>
+      <li><b>pr-{size}:</b> Padding right</li>
+      <li><b>px-{size}:</b> Padding left and right</li>
+      <li><b>py-{size}:</b> Padding top and bottom</li>
+    </ul>
+    <p class="para">Padding classes in Bootstrap are useful for creating consistent spacing between elements, aligning content within containers, and achieving desired layouts in web pages. They are an important part of Bootstrap's responsive design system, allowing for easy control over spacing in different viewport sizes.</p>
+
+    <div class="row" style="background-color: rgb(197, 149, 17); color: #fff; margin-bottom: 10px;">
+      <div class="col-6" style="background-color:rgb(250, 15, 238);">Without Padding</div>
+    </div>
+
+    <div class="row" style="background-color: rgb(197, 149, 17); color: #fff; margin-bottom: 10px;">
+      <div class="col-6 p-3" style="background-color:rgb(250, 15, 238);">Padding p-3</div>
+    </div>
+    <div class="row" style="background-color: rgb(197, 149, 17); color: #fff; margin-bottom: 10px;">
+      <div class="col-6 pt-3" style="background-color:rgb(250, 15, 238);">Padding pt-3</div>
+    </div>
+
+    <div class="row" style="background-color: rgb(197, 149, 17); color: #fff; margin-bottom: 10px;">
+      <div class="col-6 pb-3" style="background-color:rgb(250, 15, 238);">Padding pb-3</div>
+    </div>
+
+    <div class="row" style="background-color: rgb(197, 149, 17); color: #fff; margin-bottom: 10px;">
+      <div class="col-6 ps-3" style="background-color:rgb(250, 15, 238);">Padding ps-3</div>
+    </div>
+
+    <div class="row" style="background-color: rgb(197, 149, 17); color: #fff; margin-bottom: 10px;">
+      <div class="col-6 pe-3" style="background-color:rgb(250, 15, 238);">Padding pe-3</div>
+    </div>
+
+    <div class="row" style="background-color: rgb(197, 149, 17); color: #fff; margin-bottom: 10px;">
+      <div class="col-6 px-3" style="background-color:rgb(250, 15, 238);">Padding px-3</div>
+    </div>
+    <div class="row" style="background-color: rgb(197, 149, 17); color: #fff; margin-bottom: 10px;">
+      <div class="col-6 py-3" style="background-color:rgb(250, 15, 238);">Padding py-3</div>
+    </div>
+</div>
+
+<hr>
+<!--Gutter-->
+
+<div class="container" id="gutter">
+
+  <center><h1 style="color: blue; text-transform: uppercase;">Gutter</h1></center><hr>
+
+  <h2>Gutter</h2>
+
+  <p class="para">In Bootstrap 5.3, the gutter refers to the space or padding between columns in the grid system. The gutter helps create a visually pleasing layout by providing spacing and separation between columns, allowing for better organization of content. </p>
+	<p class="para"> The gutter in Bootstrap 5.3 can be customized to adjust the amount of space between columns according to your design requirements. By default, Bootstrap provides a built-in gutter size that ensures consistent spacing throughout the grid system. However, you have the flexibility to modify the gutter size to achieve the desired visual effect.</p>
+	<p class="para"> Bootstrap 5.3 offers several classes to control the gutter size, including <b>g-0</b> (no gutter),<b> g-1</b> (small gutter),<b> g-2 </b>(medium gutter),<b> g-3 </b>(large gutter), and so on. These classes can be applied to the column elements within the grid system to control the spacing between them.</p>
+	<p class="para"> Using the gutter classes in Bootstrap 5.3, you can easily create responsive layouts with evenly spaced and aligned columns. Whether you're building a simple website or a complex web application, the gutter functionality in Bootstrap 5.3 provides a convenient way to achieve consistent and visually appealing designs.</p>
+
+
+  <div class="row mb-3">
+    <p class="fw-semibold text-success">Without Gutters</p>
+    <div class="col-md-6">
+      <div class="p-3">Coding Ranjith</div>
+    </div>
+    <div class="col-md-6">
+      <div class="p-3">Coding Ranjith</div>
+    </div>
+  </div>
+  <hr />
+  <p class="fw-semibold text-success">Horizontal Gutters</p>
+  <div class="row gx-5 mb-3">
+    <div class="col-md-6">
+      <div class="p-3">Coding Ranjith</div>
+    </div>
+    <div class="col-md-6">
+      <div class="p-3">Coding Ranjith</div>
+    </div>
+    <div class="col-md-6">
+      <div class="p-3">Coding Ranjith</div>
+    </div>
+    <div class="col-md-6">
+      <div class="p-3">Coding Ranjith</div>
+    </div>
+  </div>
+  <hr />
+  <p class="fw-semibold text-success">Vertical Gutters</p>
+  <div class="row gy-5 mb-3">
+    <div class="col-md-6">
+      <div class="p-3">Coding Ranjith</div>
+    </div>
+    <div class="col-md-6">
+      <div class="p-3">Coding Ranjith</div>
+    </div>
+    <div class="col-md-6">
+      <div class="p-3">Coding Ranjith</div>
+    </div>
+    <div class="col-md-6">
+      <div class="p-3">Coding Ranjith</div>
+    </div>
+  </div>
+
+  <hr />
+  <p class="fw-semibold text-success">Horizontal & Vertical Gutters</p>
+  <div class="row g-5 mb-3">
+    <div class="col-md-6">
+      <div class="p-3">Coding Ranjith</div>
+    </div>
+    <div class="col-md-6">
+      <div class="p-3">Coding Ranjith</div>
+    </div>
+    <div class="col-md-6">
+      <div class="p-3">Coding Ranjith</div>
+    </div>
+    <div class="col-md-6">
+      <div class="p-3">Coding Ranjith</div>
+    </div>
+  </div>
+  <hr />
+  <p class="fw-semibold text-success">Zero Gutters</p>
+  <div class="row g-0 mb-3">
+    <div class="col-md-6">
+      <div class="p-3">Coding Ranjith</div>
+    </div>
+    <div class="col-md-6">
+      <div class="p-3">Coding Ranjith</div>
+    </div>
+    <div class="col-md-6">
+      <div class="p-3">Coding Ranjith</div>
+    </div>
+    <div class="col-md-6">
+      <div class="p-3">Coding Ranjith</div>
+    </div>
+  </div>
+
+  <hr />
+  <p class="fw-semibold text-success">Responsive Row columns Gutters</p>
+  <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-4">
+    <div class="col">
+      <div class="p-3">Coding Ranjith</div>
+    </div>
+    <div class="col">
+      <div class="p-3">Coding Ranjith</div>
+    </div>
+    <div class="col">
+      <div class="p-3">Coding Ranjith</div>
+    </div>
+    <div class="col">
+      <div class="p-3">Coding Ranjith</div>
+    </div>
+    <div class="col">
+      <div class="p-3">Coding Ranjith</div>
+    </div>
+    <div class="col">
+      <div class="p-3">Coding Ranjith</div>
+    </div>
+    <div class="col">
+      <div class="p-3">Coding Ranjith</div>
+    </div>
+    <div class="col">
+      <div class="p-3">Coding Ranjith</div>
+    </div>
+    <div class="col">
+      <div class="p-3">Coding Ranjith</div>
+    </div>
+    <div class="col">
+      <div class="p-3">Coding Ranjith</div>
+    </div>
+  </div>
+
+</div>
+
+<hr>
+
+<!--Border-->
+
+<div class="container" id="border">
+
+  <center><h1 style="color: blue; text-transform: uppercase;" >Border</h1></center><hr>
+
+  <h2>Border</h2>
+
+  <p class="para">In Bootstrap 5, border classes are used to apply styles and customize the borders of HTML elements. Borders are used to create visual separation and distinction between elements, and can be applied to various types of elements such as divs, buttons, images, and input fields.</p>
+<p class="para">Bootstrap provides a set of predefined border utility classes that can be easily applied to elements to control their border styles, sizes, and colors. These border classes can be used in combination with other Bootstrap classes to create responsive and visually appealing UI components.</p>
+<p class="para">Here are some commonly used border classes in Bootstrap 5:</p>
+<ol class="points">
+	<li>
+		<b>Border Style Classes</b>
+		<ul class="points">
+			<li><b>border: </b>Adds a default border to the element.</li>
+			<li><b>border-0: </b>Removes the border from the element.</li>
+			<li><b>border-{position}: </b>Adds a border to a specific side of the element, where {position} can be top, bottom, left, or right.</li>
+		</ul>	
+	</li>
+	<li>
+		<b>Border Size Classes</b>
+		<ul class="points">
+			<li><b>border-{size}: </b>Sets the width of the border, where <b>{size}</b> can be <b>sm</b> (small), <b>md </b>(medium), <b>lg</b> (large), or <b>xl</b> (extra large).</li>
+		</ul>
+	</li>
+	<li>
+		<b>Border Color Classes</b>
+		<li><b>border-{color}: </b>Sets the color of the border, where {color} </b>can be <b>primary, secondary, success, danger, warning, info, light, dark,</b> or a custom color code.</li>
+	</li>
+</ol>
+<p class="para">These border classes can be combined and used in conjunction with other Bootstrap classes to create custom border styles for elements. For example, to create a button with a red border, you can use the classes <b>btn btn-primary border border-danger</b> on the button element.</p>
+<p class="para">Bootstrap border classes are responsive and can be used in different viewport sizes to create consistent border styles across different devices. They provide an easy and efficient way to customize element borders in Bootstrap 5, allowing for visually appealing and responsive web designs.</p>
+
+<div class="row">
+  <div class="col-2 p-5 m-1 text-center border border-1 display-3">1</div>
+  <div class="col-2 p-5 m-1 text-center border border-2 display-3">2</div>
+  <div class="col-2 p-5 m-1 text-center border border-3 display-3">3</div>
+  <div class="col-2 p-5 m-1 text-center border border-4 display-3">4</div>
+  <div class="col-2 p-5 m-1 text-center border border-5 display-3">5</div>
+  <div class="col-2 p-5 m-1 text-center border-top border-5 display-3">6</div>
+  <div class="col-2 p-5 m-1 text-center border-end border-5 display-3">7</div>
+  <div class="col-2 p-5 m-1 text-center border-bottom border-5 display-3">8</div>
+  <div class="col-2 p-5 m-1 text-center border-start border-5 display-3">9</div>
+  <div class="col-2 p-5 m-1 text-center border border-0 display-3">10</div>
+  <div class="col-2 p-5 m-1 text-center border border-5 border-top-0 display-3">11</div>
+  <div class="col-2 p-5 m-1 text-center border border-5 border-end-0 display-3">12</div>
+  <div class="col-2 p-5 m-1 text-center border border-5 border-bottom-0 display-3">13</div>
+  <div class="col-2 p-5 m-1 text-center border border-5 border-start-0 display-3">14</div>
+  <div class="col-2 p-5 m-1 text-center border border-5 border-primary display-3">15</div>
+  <div class="col-2 p-5 m-1 text-center border border-5 border-secondary  display-3">16</div>
+  <div class="col-2 p-5 m-1 text-center border border-5 border-success  display-3">17</div>
+  <div class="col-2 p-5 m-1 text-center border border-5 border-danger  display-3">18</div>
+  <div class="col-2 p-5 m-1 text-center border border-5 border-warning display-3">19</div>
+  <div class="col-2 p-5 m-1 text-center border border-5 border-info  display-3">20</div>
+  <div class="col-2 p-5 m-1 text-center border border-5 border-light  display-3">21</div>
+  <div class="col-2 p-5 m-1 text-center border border-5 border-dark display-3">22</div>
+  <div class="col-2 p-5 m-1 text-center border border-5 border-white display-3">23</div>
+  <div class="col-2 p-5 m-1 text-center border border-5 border-danger  display-3 border-opacity-75">24</div>
+  <div class="col-2 p-5 m-1 text-center border border-5 border-danger display-3 border-opacity-50">25</div>
+  <div class="col-2 p-5 m-1 text-center border border-5 border-danger display-3 border-opacity-25">26</div>
+  <div class="col-2 p-5 m-1 text-center border border-5 border-danger display-3 border-opacity-10">27</div>
+</div>
+
+
+</div>
+
+<hr>
+
+<!--Border radius-->
+
+<div class="container" id="border-radius">
+
+  <center><h1 style="color: blue; text-transform: uppercase;" >Border Radius</h1></center><hr>
+
+  <h2>Border Radius</h2>
+
+  <p class="para">In Bootstrap 5, border radius classes are used to apply rounded corners to elements, such as buttons, divs, images, and other HTML elements. These classes allow developers to easily create visually appealing rounded border elements without having to write custom CSS.</p>
+<p class="para">Bootstrap 5 provides a range of border radius classes that can be applied to elements. The general format for a border radius class in Bootstrap 5 is <b>border-radius-{value}</b>, where <b>{value}</b> can be one of the predefined values: <b>sm  </b>(small),  <b>md </b> (medium),  <b>lg </b> (large), or  <b>xl </b>(extra large)</p>
+<p class="para">By using the border radius classes in Bootstrap 5, you can easily customize the appearance of your elements and create rounded corner elements that align with your design requirements.</p>
+
+<div class="row">
+  <div class="col-auto bg-primary m-2 rounded">All Side</div>
+  <div class="col-auto bg-primary m-2 rounded-top">Top</div>
+  <div class="col-auto bg-primary m-2 rounded-end">End</div>
+  <div class="col-auto bg-primary m-2 rounded-bottom">Bottom</div>
+  <div class="col-auto bg-primary m-2 rounded-start">Start</div>
+  <div class="col-auto bg-primary m-2  rounded-circle">Circle</div>
+  <div class="col-auto bg-primary m-2 rounded-pill pill">Pill</div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-auto bg-primary m-2 rounded-0">0</div>
+  <div class="col-auto bg-secondary m-2 rounded-1">1</div>
+  <div class="col-auto bg-secondary m-2 rounded-2">2</div>
+  <div class="col-auto bg-success m-2 rounded-3">3</div>
+  <div class="col-auto bg-warning m-2 rounded-4">4</div>
+  <div class="col-auto bg-primary m-2 rounded-5">5</div>
+</div>
+
+</div>
+
+<hr>
+
+<center><h1 style="color: #e01425; text-transform: uppercase;">--- Happy Coding ---</h1></center>
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
