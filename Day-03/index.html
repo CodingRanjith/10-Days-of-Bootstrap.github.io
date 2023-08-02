@@ -1,0 +1,1172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <title>Day 3 in Bootstrap - Coding Ranjith</title>
+
+  </head>
+  <body style="background-color: #fff;">
+
+    <center><h1 style="color: red; text-transform: uppercase;" >Day 3 in Bootstrap - Coding Ranjith</h1></center><hr>
+
+    <center>
+      <button class="btn btn-success btn-sm"><a href="#typography" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">TypoGraphy</a></button>
+      <button class="btn btn-danger btn-sm"><a href="#images" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Images</a></button>
+      <button class="btn btn-primary btn-sm"><a href="#image-gallery" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Image Gallery</a></button>
+      <button class="btn btn-secondary btn-sm"><a href="#figures" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Figures</a></button>
+      <button class="btn btn-info btn-sm"><a href="#tables" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Tables</a></button>
+    </center>
+
+    <hr>
+
+    <!--Typography-->
+
+    <div class="container" id="typography">
+
+  <center><h1 style="color: blue; text-transform: uppercase;" >Typography</h1></center><hr>
+
+  <h2>Typography</h2>
+
+      
+<p class="para">Bootstrap 5 provides a wide range of typography classes that allow you to easily style and format text in your web pages. These classes can be applied to various HTML elements such as headings, paragraphs, links, lists, and more. Here are some commonly used typography classes in Bootstrap 5</p>
+<ol class="points">
+	<li>
+		<b>Text Styling Classes</b>
+		<ul>
+			<li><b>text-primary, text-secondary, text-success, text-danger, text-warning, text-info, text-light, text-dark</b>: These classes set the color of the text to predefined Bootstrap color themes.</li>
+		</ul>
+	</li>
+	<li>
+		<b>Text Alignment Classes</b>
+		<ul>
+			<li><b>text-start, text-center, text-end :</b> These classes align the text to the start, center, or end of the container, respectively.</li>
+		</ul>
+	</li>
+	<li>
+		<b>Font Size Classes:</b>
+		<ul>
+			<li><b>fs-1, fs-2, fs-3, fs-4, fs-5, fs-6 :</b> These classes set the font size of the text to predefined values.</li>
+		</ul>
+	</li>
+	<li>
+		<b>Font Weight Classes:</b>
+		<ul>
+			<li><b>fw-normal, fw-bold : </b> These classes set the font weight of the text to normal or bold, respectively.</li>
+		</ul>
+	</li>
+	<li>
+		<b>Font Style Classes:</b>
+		<ul>
+			<li><b>fst-italic: </b>This class sets the text to italic style.</li>
+		</ul>
+	</li>
+	<li>
+		<b>Text Color Classes</b>
+		<ul>
+			<li><b>text-[color]:</b> These classes set the color of the text to a specific color. Replace [color] with the desired color, such as <b>text-primary, text-secondary, text-danger, </b>etc.</li>
+		</ul>
+	</li>
+	<li>
+		<b>Text Transformation Classes</b>
+		<ul>
+			<li><b>text-lowercase, text-uppercase, text-capitalize:</b> These classes transform the text to lowercase, uppercase, or capitalize the first letter of each word, respectively.</li>
+		</ul>
+	</li>
+	<li>
+		<b>Text Overflow and Text Break Classes:</b>
+		<ul>
+			<li><b>text-overflow-ellipsis, text-overflow-clip, text-break:</b> These classes control the behavior of text overflow and text breaking in case of long text or limited space</li>
+		</ul>
+	</li>
+	<li>
+		<b>Word Wrap Classes:</b>
+		<ul>
+			<li><b>word-wrap-break-word:</b> This class enables word wrapping in case of long words that exceed the container width.</li>
+		</ul>
+	</li>
+</ol>
+
+</div>
+
+<hr>   
+
+<!--Images-->
+
+<div class="container" id="images">
+
+  <center><h1 style="color: blue; text-transform: uppercase;">Images</h1></center><hr>
+
+  <h2>Images</h2>
+
+  <p class="para">In Bootstrap 5.3, image components provide a convenient way to display and manipulate images within your web page. These components offer various features such as responsiveness, image optimization, alignment, sizing, captions, and overlays. Let's explore each aspect in more detail:</p>
+	<ul class="points">
+		<li><b>Responsiveness:</b> Bootstrap 5.3 includes responsive image classes that automatically scale images based on the screen size. By applying the appropriate classes, such as <b>img-fluid</b>, to your &lt;img&gt; tags, you can ensure that the images adapt and fit nicely within different viewport sizes.</li>
+
+		<li><b>Image Optimization:</b> Bootstrap 5.3 encourages the use of optimized images to enhance website performance. You can compress and resize your images using external tools or libraries, then include them in your Bootstrap project. Optimized images help reduce page load times and improve overall user experience.</li>
+
+		<li><b>Image Alignment:</b> You can easily align images using Bootstrap's flexbox utility classes. By adding classes like <b>float-start</b> or <b>float-end</b> to your &lt;img&gt; tags or wrapping them in a container with classes such as <b>d-flex</b> and <b>justify-content-center</b>, you can control the positioning of your images within the page layout.</li>
+
+		<li><b>Image Sizing:</b> Bootstrap 5.3 provides classes to adjust the size of images, allowing you to make them larger or smaller as needed. By applying classes like <b>w-100</b> (full width) or <b>h-50</b> (half height), you can customize the dimensions of your images while maintaining their aspect ratio.</li>
+
+		<li><b>Image Shapes:</b>Bootstrap includes classes to create <b>rounded</b>,<b> circle</b>, or <b>thumbnail-shaped</b> images. The <b>rounded</b>, <b>rounded-circle</b>, and <b>img-thumbnail </b>classes allow you to add visual styles to your images, giving them a distinct appearance.</li>
+		<li><b>Image Captions:</b> To add captions to your images, Bootstrap 5.3 offers the &lt;figure&gt; and &lt;figcaption&gt; elements. Wrapping an &lt;img&gt; tag with a &lt;figure&gt; element and placing the caption text inside a &lt;figcaption&gt; element allows you to create descriptive captions that accompany your images.</li>
+
+		<li><b>Image Overlays:</b> Bootstrap 5.3 provides components and classes for creating image overlays, such as the <b>card</b> component or the <b>position-relative</b> class. These features enable you to overlay text, buttons, or other elements on top of your images, allowing for creative and engaging visual effects.</li>
+			
+	</ul>
+  <center><h4>img-fluid</h4></center>
+  <hr>
+  <img src="https://codingranjith.github.io/image/bg1.jpg" alt="coding-ranjith" class="img-fluid"/>
+  <hr>
+  <center><h4>img-fluid img-thumbnail</h4></center>
+  <hr>
+  <img src="https://codingranjith.github.io/image/bg1.jpg" alt="coding-ranjith" class="img-fluid img-thumbnail"/>
+
+</div>
+
+<hr>
+
+<!--Image Gellery-->
+
+<div class="container" id="image-gallery">
+
+  <center><h1 style="color: blue; text-transform: uppercase;">Image Gallery</h1></center><hr>
+
+  <h2>Image Gallery</h2>
+
+  <p class="para">In Bootstrap 5.3, an image gallery can be easily created using the built-in components and classes provided by Bootstrap. Here's an explanation of how you can create an image gallery in Bootstrap 5.3.</p>
+	<ul class="points">
+		<li><b>Grid System:</b> Bootstrap's grid system allows you to create a responsive layout for your image gallery. You can use the "row" and "col" classes to create a grid structure and define the number of columns you want in each row.</li>
+		<li><b>Card Component:</b> Bootstrap's "card" component is useful for displaying images in a gallery format. You can use the "card" class to create a container for each image in your gallery. Inside the card, you can include the image itself, along with any additional content such as captions or descriptions.</li>
+		<li><b>Image Thumbnails:</b> To display the images as thumbnails, you can use the "img-thumbnail" class provided by Bootstrap. This class adds a small border and padding to the image, making it visually distinct from the surrounding elements.</li>
+		<li><b>Modal: </b>Bootstrap's modal component can be used to display a larger version of an image when clicked. By wrapping the image inside a modal container and adding the necessary attributes and classes, you can create a modal that opens with a larger view of the image.</li>
+		<li><b>Carousel: </b>If you want to create a slideshow-like experience for your image gallery, you can utilize Bootstrap's carousel component. The carousel allows you to display multiple images in a rotating fashion, with options for navigation and autoplay.</li>
+	</ul>
+
+  <div class="container mt-4">
+    <h4 class="text-primary mb-4">Responsive Image Gallery</h4>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 g-md-3 g-lg-4">
+      <div class="col">
+        <img class="img-fluid img-thumbnail" src="https://codingranjith.github.io/image/bg1.jpg" alt="Coding Ranjith" />
+      </div>
+      <div class="col">
+        <img class="img-fluid img-thumbnail" src="https://codingranjith.github.io/image/bg1.jpg" alt="Coding Ranjith" />
+      </div>
+      <div class="col">
+        <img class="img-fluid img-thumbnail" src="https://codingranjith.github.io/image/bg1.jpg" alt="Coding Ranjith" />
+      </div>
+      <div class="col">
+        <img class="img-fluid img-thumbnail" src="https://codingranjith.github.io/image/bg1.jpg" alt="Coding Ranjith" />
+      </div>
+      <div class="col">
+        <img class="img-fluid img-thumbnail" src="https://codingranjith.github.io/image/bg1.jpg" alt="Coding Ranjith" />
+      </div>
+      <div class="col">
+        <img class="img-fluid img-thumbnail" src="https://codingranjith.github.io/image/bg1.jpg" alt="Coding Ranjith" />
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<hr>
+
+
+<!--Figures-->
+
+<div class="container" id="figures">
+
+  <center><h1 style="color: blue; text-transform: uppercase;">Figures &amp; Figcaption</h1></center><hr>
+
+  <h2> Figures &amp; Figcaption</h2>
+	<p class="para">In Bootstrap 5.3, figures are a component used to enhance the presentation of images and media content. The &lt;figure&gt; element, along with the &lt;figcaption&gt; element, is used to wrap and caption the image or media. Here's an explanation of how to use figures in Bootstrap 5.3</p>
+	<p class="para">Structure the figure: Start by creating a &lt;figure&gt; element and placing the image or media content inside it. </p>
+
+  <figure class="figure">
+    <img src="https://codingranjith.github.io/image/bg1.jpg" alt="Coding Ranjith" class="img-fluid rounded figure-img" />
+    <figcaption class="figure-caption">A caption for the above image.</figcaption>
+  </figure>
+   
+  <p class="para"><b>&lt;figure class="figure"&gt;:</b> This &lt;figure&gt; element represents the container for the image and its caption. The "figure" class is applied to add default Bootstrap styling to the figure.</p>
+  <p class="para"><b> &lt;figcaption class="figure-caption"&gt; A caption for the above image. &lt;/figcaption&gt; : </b>This &lt;figcaption&gt;  element represents the caption for the image. The "figure-caption" class is applied to style the caption text.</p>
+
+</div>
+
+<hr>
+
+
+<!--Tables-->
+
+<div class="container" id="tables">
+
+  <center><h1 style="color: blue; text-transform: uppercase;">Tables</h1></center><hr>
+
+  <h2>Tables</h2>
+
+  <p class="para">In Bootstrap 5.3, tables can be easily styled and made responsive using the built-in classes and components provided by Bootstrap. Here's an explanation of tables in Bootstrap 5.3:</p>
+	<ul class="points">
+		<li><b>Basic Table Structure:</b> To create a basic table, you can use the &lt;table&gt; element with the "table" class. Inside the table, you can define table rows using the &lt;tr&gt; element and table data/cells using the &lt;td&gt; element. You can also use the &lt;th&gt; element to define table headers for each column.</li>
+
+		<li><b>Table Styling:</b> Bootstrap provides several classes to style tables. You can use classes such as<b> "table-striped"</b> to add alternating background colors to table rows, <b>"table-bordered"</b> to add borders to table cells, and <b>"table-hover"</b> to highlight rows on hover. Additionally, classes like <b>"table-responsive"</b> can be used to make the table horizontally scrollable on smaller screens.</li>
+
+		<li><b>Table Components: </b>Bootstrap offers various table components that enhance the functionality and appearance of tables. For example, you can use the <b>"thead"</b> element to group table header content, the <b>"tbody"</b> element to group table body content, and the "tfoot" element to group table footer content.</li>
+
+		<li><b>Table Customization:</b> You can further customize tables using Bootstrap's utility classes. For instance, you can use classes like <b>"text-center"</b> to <b>center-align</b> content within table cells, <b>"text-nowrap"</b> to prevent text wrapping, or <b>"text-truncate"</b> to truncate long text with ellipses.</li>
+
+		<li><b>Advanced Features: </b>Bootstrap also provides additional features for tables, such as table pagination and table sorting. You can use the <b>"table-responsive"</b> class in combination with pagination classes like <b>"pagination"</b> and <b>"page-link"</b> to create a paginated table. For sorting functionality, you can utilize JavaScript plugins or write custom JavaScript code to handle table sorting.</li>
+	</ul>
+	
+  <h4 class="blog-sub-title">Bootstrap Normal Table</h4>
+  <p class="para">In Bootstrap 5.3, a normal table refers to a basic table structure that can be easily styled and customized using Bootstrap's classes. Here's an explanation of how to create a normal table in Bootstrap 5.3:</p>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4 class="blog-sub-title">Bootstrap Table Colors</h4>
+  <p class="para">In Bootstrap 5.3, you can easily apply different colors to tables using the available utility classes. Here's an explanation of the table color options in Bootstrap 5.3</p>
+  <p class="para">Background Color Classes: Bootstrap also provides utility classes for applying specific background colors to table rows or cells. These classes are applied to the &lt;tr&gt; or &lt;td&gt; elements. The available background color classes are:</p>
+  <ul class="points">
+		<li><b>table-primary:</b> Applies a primary background color.</li>
+		<li><b>table-secondary:</b> Applies a secondary background color.</li>
+		<li><b>table-success:</b> Applies a success background color.</li>
+		<li><b>table-info:</b> Applies an info background color.</li>
+		<li><b>table-warning:</b> Applies a warning background color.</li>
+		<li><b>table-danger:</b> Applies a danger background color.</li>
+		<li><b>table-light:</b> Applies a light background color.</li>
+		<li><b>table-dark: </b>Applies a dark background color.</li>
+  </ul>
+  <p class="para">These classes allow you to apply specific colors to table rows or cells to match your design or highlight specific information.</p>
+
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+      <tr class="table-dark">
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+      <tr class="table-secondary">
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td class="table-secondary">Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+    </tbody>
+</table>
+
+<h4 class="blog-sub-title">Striped Table</h4>
+  <p class="para">In Bootstrap 5.3, you can easily apply different colors to tables using the available utility classes. Here's an explanation of the table color options in Bootstrap 5.3</p>
+  
+  <ul class="points">
+	<li>Add the "table-striped" class: To create a striped table, apply the "table-striped" class to the &lt;table&gt; element. For example, your table declaration would look like this: &lt;table&gt; class="table table-striped"&gt;.</li>
+	<li>Row Alternation: The "table-striped" class automatically adds alternating background colors to the table rows. By default, Bootstrap uses two background colors: a light color for even rows and a transparent background for odd rows..</li>
+  </ul>
+ <p class="para">By following these steps, you can create a striped table in Bootstrap 5.3. The striped pattern improves readability and helps users visually separate and differentiate rows in a table. Remember to include the necessary Bootstrap CSS and JavaScript files in your project to ensure that the Bootstrap styles and functionalities are properly applied to the table and other elements.</p>
+
+ <table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th>Heading</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h4 class="blog-sub-title">Striped Table Columns</h4>
+<p class="para">In Bootstrap 5.3, you can create striped tables by using the <b>"table-striped-columns"</b> class. A striped table alternates the background color of table columns, making it easier to read and distinguish between columns. Here's an explanation of how to create a striped table in Bootstrap 5.3</p>
+
+<table class="table table-striped-columns table-dark">
+  <thead>
+    <tr>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th>Heading</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h4 class="blog-sub-title">Hover Table</h4>
+  <p class="para">In Bootstrap 5.3, you can create a hover effect on table rows using the "table-hover" class. This class adds interactivity to your table by highlighting rows when hovering over them. Here's an explanation of how to create a hover table in Bootstrap 5.3</p>
+
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+    </tbody>
+</table>
+
+
+<h4 class="blog-sub-title">Active Rows</h4>
+<p class="para">Highlight a table row or cell by adding a <b>.table-active</b> class.</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th class="table-active">Heading</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr class="table-active">
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td class="table-active">Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 class="blog-sub-title">Bordered Table </h4>
+<p class="para">In Bootstrap 5.3, the <b>"table-bordered"</b> class allows you to add borders to the cells of a table, creating a bordered appearance. Here's an explanation of how to use the <b>"table-bordered"</b> class in Bootstrap 5.3</p>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th>Heading</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h4 class="blog-sub-title">Table Bordered with Border-color </h4>
+	<p class="para">Add .table-bordered for borders on all sides of the table and cells.</p>
+	<ul class="points">
+		<li>.table </li>
+		<li>.table-bordered </li>
+		<li>.border-primary</li>
+		<li>.border-secondary</li>
+		<li>.border-danger</li>
+		<li>.border-info</li>
+		<li>.border-warning</li>
+		<li>.border-dark</li>
+		<li>.border-light</li>
+		<li>.border-success</li>
+	</ul>
+
+
+  <table class="table table-bordered border-light table-dark">
+    <thead>
+      <tr>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4 class="blog-sub-title">Borderless Table</h4>
+<p class="para">In Bootstrap 5.3, you can create a borderless table by using the <b>"table-borderless"</b> class. This class allows you to remove the borders around the cells of a table, resulting in a clean and <b>borderless</b> appearance. Here's an explanation of how to create a <b>borderless</b> table in Bootstrap 5.3.</p>
+
+<table class="table table-borderless">
+  <thead>
+    <tr>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th>Heading</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h4 class="blog-sub-title">Compact Table</h4>
+<p class="para">In Bootstrap 5.3, you can create a compact table by using the "table-sm" class. This class reduces the padding and font size of the table, making it more compact and suitable for displaying larger amounts of data in a limited space. Here's an explanation of how to create a compact table in Bootstrap 5.3</p>
+
+<table class="table table-sm">
+  <thead>
+    <tr>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th>Heading</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h4 class="blog-sub-title">Table Group Dividers</h4>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th>Heading</th>
+    </tr>
+  </thead>
+  <tbody class="table-group-divider" style="border-top-color: red">
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h4 class="blog-sub-title">Nested Table</h4>
+<p class="para">In Bootstrap 5.3, you can create nested tables by placing one table inside another. This technique allows you to organize and structure your data in a hierarchical manner. Here's an explanation of how to create nested tables in Bootstrap 5.3</p>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Heading</th>
+      <th>Heading</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Heading</th>
+              <th>Heading</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Data</td>
+              <td>Data</td>
+            </tr>
+            <tr>
+              <td>Data</td>
+              <td>Data</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h4 class="blog-sub-title">Table With Footer</h4>
+<p class="para">In Bootstrap 5.3, you can create a table with a footer section to display additional information or summary data. The footer section appears below the table body and can be used to provide context or aggregate data. Here's an explanation of how to create a table with a footer in Bootstrap 5.3</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th>Heading</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+  </tbody>
+  <tfoot class="table-primary">
+    <tr>
+      <td>Footer Data</td>
+      <td>Footer Data</td>
+      <td>Footer Data</td>
+      <td>Footer Data</td>
+      <td>Footer Data</td>
+    </tr>
+  </tfoot>
+</table>
+
+
+<h4 class="blog-sub-title">Responsive Table</h4>
+<p class="para">In Bootstrap 5.3, you can create responsive tables that adapt to different screen sizes using the "table-responsive" class. This class ensures that the table remains horizontally scrollable on smaller screens, preventing it from overflowing the container and maintaining readability. Here's an explanation of how to create a responsive table in Bootstrap 5.3.</p>
+
+
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+        <th>Heading</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+      <tr>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+        <td>Data</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+</div>
+
+
+<hr>
+
+<center><h1 style="color: #e01425; text-transform: uppercase;">--- Happy Coding ---</h1></center>
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
