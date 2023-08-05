@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <title>Day 4 in Bootstrap - Coding Ranjith</title>
+
+  </head>
+  <body style="background-color: #fff;">
+
+    <center><h1 style="color: red; text-transform: uppercase;" >Day 4 in Bootstrap - Coding Ranjith</h1></center><hr>
+
+    <center>
+      <button class="btn btn-success btn-sm"><a href="#buttons" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Buttons</a></button>
+      <button class="btn btn-danger btn-sm"><a href="#buttons-group" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Buttons Group</a></button>
+      <button class="btn btn-primary btn-sm"><a href="#button-group-dropdown" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Button Group with Dropdwon</a></button>
+    </center>
+
+<hr>   
+
+<!--Buttons-->
+
+<div class="container" id="buttons">
+
+  <center><h1 style="color: blue; text-transform: uppercase;" >Buttons</h1></center><hr>
+
+  <h2>Buttons</h2>
+
+  <p class="para">In Bootstrap 5.3, buttons are an essential component used to trigger actions, perform tasks, or navigate within a web page or application. Bootstrap provides a comprehensive set of classes and styles to create stylish and interactive buttons with ease.</p>
+
+
+  <ul class="points">
+    <li><b>Button Styles:</b> Bootstrap offers various button styles to suit different purposes. These styles include<b> btn-primary, btn-secondary, btn-success, btn-danger, btn-warning, btn-info, btn-light, btn-dark</b>, and more. These classes determine the background color and overall appearance of the button.</li>
+  
+    <li><b>Button Sizes:</b> Buttons can be resized using different size classes, such as<b> btn-sm</b> for small buttons,<b> btn-lg</b> for large buttons, or the default size.</li>
+  
+    <li><b>Button States: </b>Bootstrap provides classes for different states of buttons, such as <b>disabled</b> to disable a button, <b>active</b> to highlight an active button, and focus to give focus to a button.</li>
+  
+    <li><b>Button Variants:</b> Bootstrap 5.3 allows you to create outline buttons using the <b>btn-outline-*</b> classes. These variants have a transparent background with colored borders, creating a stylish and modern look.</li>
+  
+    <li><b>Button with Icons: </b>You can easily add icons to buttons by using Bootstrap's icon classes, such as<b> bi bi-* </b>or <b>fas fa-*</b>, along with the button classes.</li>
+  </ul>
+
+  <button class="btn btn">btn</button>
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-secondary">Secondary</button>
+<button class="btn btn-success">Success</button>
+<button class="btn btn-danger">Danger</button>
+<button class="btn btn-warning">Warning</button>
+<button class="btn btn-info">info</button>
+<button class="btn btn-dark">Dark</button>
+<button class="btn btn-light">Light</button>
+<button class="btn btn-link">Link</button>
+
+<button type="submit" class="btn btn-primary">Button</button>
+<button type="button" class="btn btn-primary">Button</button>
+<input type="submit" class="btn btn-primary" value="Button" />
+<input type="reset" class="btn btn-danger" value="Button" />
+<a href="#" class="btn btn-primary">Button Link</a>
+
+<hr>
+
+<h2>Outline buttons</h2>
+
+<button class="btn btn-outline-primary">Primary</button>
+<button class="btn btn-outline-secondary">Secondary</button>
+<button class="btn btn-outline-success">Success</button>
+<button class="btn btn-outline-danger">Danger</button>
+<button class="btn btn-outline-warning">Warning</button>
+<button class="btn btn-outline-info">info</button>
+<button class="btn btn-outline-dark">Dark</button>
+<button class="btn btn-outline-light">Light</button>
+
+
+<hr>
+
+<h2>Buttons Size</h2>
+
+<button class="btn btn-primary btn-sm">Primary</button>
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-primary btn-lg">Primary</button>
+
+<hr>
+
+<h2>Grid Buttons</h2>
+
+<div class="d-grid gap-2">
+  <button class="btn btn-primary">Primary</button>
+  <button class="btn btn-primary">Primary</button>
+</div>
+<div class="mt-5 d-flex justify-content-end">
+  <button class="btn btn-primary me-2">Primary</button>
+  <button class="btn btn-primary">Primary</button>
+</div>
+
+</div>
+
+
+<hr>
+
+
+
+<!--Buttons Group-->
+
+<div class="container" id="buttons-group">
+
+
+  <center><h1 style="color: blue; text-transform: uppercase;">Buttons Group</h1></center><hr>
+
+  <h2>Buttons Group</h2>
+
+  <p class="para">Group a series of buttons together on a single line with the button group.</p>
+	
+		<b>Button Group Classes</b>
+		<ul class="points">
+			<li>btn-group</li>
+			<li>btn-group-vertical</li>
+			<li>btn-group-justified</li>
+    </ul>
+
+    <div class="row">
+      <div class="col-md-6">
+          <div class="btn-group">
+              <button type="button" class="btn btn-primary">Home</button>
+              <button type="button" class="btn btn-info">Contact</button>
+              <button type="button" class="btn btn-danger">Product</button>
+              <button type="button" class="btn btn-success">Download</button>
+          </div>
+          <hr>
+          <div class="btn-group btn-group-lg">
+              <button type="button" class="btn btn-primary">Home</button>
+              <button type="button" class="btn btn-info">Contact</button>
+              <button type="button" class="btn btn-danger">Product</button>
+              <button type="button" class="btn btn-success">Download</button>
+          </div>
+          <hr>
+          <div class="btn-group btn-group-sm">
+              <button type="button" class="btn btn-primary">Home</button>
+              <button type="button" class="btn btn-info">Contact</button>
+              <button type="button" class="btn btn-danger">Product</button>
+              <button type="button" class="btn btn-success">Download</button>
+          </div>
+          <hr>
+          <div class="btn-group btn-group-xs">
+              <button type="button" class="btn btn-primary">Home</button>
+              <button type="button" class="btn btn-info">Contact</button>
+              <button type="button" class="btn btn-danger">Product</button>
+              <button type="button" class="btn btn-success">Download</button>
+          </div>
+          <hr>
+          <div class="btn-group-vertical">
+              <button type="button" class="btn btn-danger">Home</button>
+              <button type="button" class="btn btn-danger">Contact</button>
+              <button type="button" class="btn btn-danger">Product</button>
+              <button type="button" class="btn btn-danger">Download</button>
+          </div>
+          <hr>
+          <div class="btn-group">
+              <a href="#" class="btn btn-primary">Home</a>
+              <a href="#" class="btn btn-primary">Contact</a>
+              <a href="#" class="btn btn-primary">Product</a>
+              <a href="#" class="btn btn-primary">Download</a>
+          </div>
+          <hr>
+          <div class="btn-group btn-group-justified">
+              <a href="#" class="btn btn-primary">Home</a>
+              <a href="#" class="btn btn-primary">Contact</a>
+              <a href="#" class="btn btn-primary">Product</a>
+              <a href="#" class="btn btn-primary">Download</a>
+          </div>
+          <hr>
+          <div class="btn-group btn-group-justified">
+              <div class="btn-group">
+                  <button type="button" class="btn btn-danger">Home</button>
+              </div>
+              <div class="btn-group">
+                  <button type="button" class="btn btn-danger">Contact</button>
+              </div>
+              <div class="btn-group">
+                  <button type="button" class="btn btn-danger">Product</button>
+              </div>
+              <div class="btn-group">
+                  <button type="button" class="btn btn-danger">Download</button>
+              </div>
+          </div>
+          <hr>
+
+      </div>
+  </div>
+
+
+
+</div>
+
+
+<hr>
+
+<div class="container" id="buttons-group-dropdown">
+
+
+  <center><h1 style="color: blue; text-transform: uppercase;">Button Group with Dropdown</h1></center><hr>
+
+  <h2>Button Group with Dropdown</h2>
+
+  <p>Place a .btn-group within another .btn-group when you want dropdown menus mixed with a series of buttons.</p>
+
+  <div class="row">
+    <div class="col-md-6">
+        <div class="btn-group">
+            <button class="btn btn-primary">Courses</button>
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#">C</a></li>
+                <li><a href="#">C++</a></li>
+                <li><a href="#">Java</a></li>
+                <li><a href="#">C#.Net</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="btn-group">
+            <button class="btn btn-primary">Home</button>
+            <button class="btn btn-primary">Downloads</button>
+            <div class="btn-group">
+                <button class="btn btn-primary">Courses</button>
+                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                </button>
+
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">C</a></li>
+                    <li><a href="#">C++</a></li>
+                    <li><a href="#">Java</a></li>
+                    <li><a href="#">C#.Net</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<hr>
+
+
+
+<center><h1 style="color: #e01425; text-transform: uppercase;">--- Happy Coding ---</h1></center>
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
