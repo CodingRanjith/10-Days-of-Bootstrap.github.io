@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <title>Day 5 in Bootstrap - Coding Ranjith</title>
+
+  </head>
+  <body style="background-color: #fff;">
+
+    <center><h1 style="color: red; text-transform: uppercase;" >Day 5 in Bootstrap - Coding Ranjith</h1></center><hr>
+
+    <center>
+      <button class="btn btn-success btn-sm"><a href="#badges-labels" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Badges and Labels</a></button>
+      <button class="btn btn-danger btn-sm"><a href="#progress-bar" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Progress Bar</a></button>
+      <button class="btn btn-primary btn-sm"><a href="#breadcrumb" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Breadcrumb</a></button>
+    </center>
+
+<hr>  
+
+
+<div class="container" id="badges-labels">
+
+  <center><h1 style="color: blue; text-transform: uppercase;">Badges and Labels</h1></center><hr>
+
+  <h2>Badges and Labels</h2>
+
+  <p class="para">
+    In Bootstrap 5.3, a badge is a small visual element used to highlight or indicate additional information within a user interface. Badges are typically used to display counts, notifications, status indicators, or labels. They are commonly seen in navigation menus, buttons, cards, and other UI components.</p>
+
+    <p class="para">Bootstrap provides a built-in class called "badge" that can be applied to various HTML elements to create badges. By default, badges have a rounded shape and a background color that contrasts with the surrounding content. The text inside the badge is usually a number or a short label.</p>
+    <p class="para">Here's an example of a basic badge in Bootstrap 5.3:</p>
+
+<h1>Heading Tags <span class="badge bg-primary">New</span></h1>
+<h2>Heading Tags <span class="badge bg-primary">New</span></h2>
+<h3>Heading Tags <span class="badge bg-primary">New</span></h3>
+<h4>Heading Tags <span class="badge bg-primary">New</span></h4>
+<h5>Heading Tags <span class="badge bg-primary">New</span></h5>
+<h6>Heading Tags <span class="badge bg-primary">New</span></h6>
+
+<h2>Buttons With Notification</h2>
+ <p class="para">To create badge buttons with notifications in Bootstrap 5.3, you can combine the button and badge components. Here's an example of how you can achieve this:</p> 
+
+ <button class="btn btn-success">Notification <span class="badge text-bg-secondary">5</span></button>
+
+ <p class="para"><b>class="badge text-bg-secondary"</b> this applies the Bootstrap classes <b>"badge"</b> and <b>"text-bg-secondary"</b> to the span element. The "badge" class styles the span element as a badge, and "text-bg-secondary" sets the text color to white and the background color to a secondary color (usually gray) for the badge.</p>
+<p class="para">So, the code creates a button with the text "Notification" and a badge indicating a count of 5. The badge has a gray background color and white text color. The button itself has a green color style applied to it. You can customize the classes, colors, and content according to your design needs.</p>
+
+  <h2>Positioned Notification</h2>
+ <p class="para"> To create a container <b>&lt;div&gt;</b> element with the class<b> position-relative</b>. This class allows the child elements to be positioned relative to this container.</p>  
+
+ <button class="btn btn-primary position-relative">Inbox <span class="badge bg-danger position-absolute rounded-pill top-0 start-100 translate-middle">99+</span></button>
+
+ <h2>Background colors</h2>
+ <p class="para"> In Bootstrap 5.3, you can apply different background colors to badges using the contextual classes provided by the framework. These classes allow you to easily style badges with various background colors to convey different meanings or visual indicators.</p>  
+ <p class="para"> Here are the available background color classes for badges in Bootstrap 5.3:</p>  
+ <ul class="points">
+	<li><b>bg-primary:</b> Applies the primary color as the background color for the badge.</li>
+	<li><b>bg-secondary: </b>Applies a secondary color as the background color for the badge.</li>
+	<li><b>bg-success:</b> Sets a success color as the background color for the badge.</li>
+	<li><b>bg-danger: </b>Sets a danger color as the background color for the badge.</li>
+	<li><b>bg-warning: </b>Applies a warning color as the background color for the badge.</li>
+	<li><b>bg-info:</b> Sets an informative color as the background color for the badge.</li>
+	<li><b>bg-light:</b> Applies a light color as the background color for the badge.</li>
+	<li><b>bg-dark:</b> Sets a dark color as the background color for the badge.</li>
+ </ul>
+
+ <span class="badge bg-primary">Badge</span>
+ <span class="badge bg-secondary">Badge</span>
+ <span class="badge bg-success">Badge</span>
+ <span class="badge bg-danger">Badge</span>
+ <span class="badge bg-info">Badge</span>
+ <span class="badge bg-warning">Badge</span>
+ <span class="badge bg-dark">Badge</span>
+ <span class="badge bg-light">Badge</span>
+
+
+ <h2>Positioned Notification</h2>
+ <p class="para">In Bootstrap 5.3, pill badges are a variation of badges that have rounded corners, giving them a pill-like appearance. Pill badges are often used to display counts or labels in a more visually prominent and stylish way.</p>  
+
+ <span class="badge bg-primary rounded-pill">Badge</span>
+<span class="badge bg-secondary rounded-pill">Badge</span>
+<span class="badge bg-success rounded-pill">Badge</span>
+<span class="badge bg-danger rounded-pill">Badge</span>
+<span class="badge bg-info rounded-pill">Badge</span>
+<span class="badge bg-warning rounded-pill">Badge</span>
+<span class="badge bg-dark rounded-pill">Badge</span>
+<span class="badge bg-light rounded-pill">Badge</span>
+
+</div>
+
+<hr>
+
+
+<div class="container" id="progress-bar">
+
+  <center><h1 style="color: blue; text-transform: uppercase;">Progress Bars</h1></center><hr>
+
+  <h2>Progress Bars</h2>
+
+  <p class="para">Progress components are built with two HTML elements, some CSS to set the width, and a few attributes. </p>
+	<b> Bootstrap provides several types of progress bars. </b>
+	<ul>
+		<li>progress-bar (default)</li>
+		<li>progress-bar-striped </li>
+	</ul>
+	<p class="para">Add class <b>active</b> to animate the progress bar</p>
+	<b> Colored Progress Bars </b>
+	<ul class="points">
+		<li>progress-bar-default</li>
+		<li>progress-bar-primary</li>
+		<li>progress-bar-success</li>
+		<li>progress-bar-info</li>
+		<li>progress-bar-warning</li>
+		<li>progress-bar-danger</li>
+		
+	</ul>
+	<p class="para">Progress bars can also be stacked.</p>
+
+  <div class="row">
+    <div class="col-md-6">
+        <h3>Progress Bar</h3>
+        <div class="progress">
+            <div class="progress-bar" style="width: 60%;">60%</div>
+        </div>
+        <hr>
+        <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="40" style="width: 50%;">50%</div>
+        </div>
+        <hr>
+        <div class="progress">
+            <div class="progress-bar progress-bar-danger" style="width: 60%;">60%</div>
+        </div>
+        <hr>
+        <div class="progress">
+            <div class="progress-bar progress-bar-warning" style="width: 60%;">60%</div>
+        </div>
+        <hr>
+        <div class="progress">
+            <div class="progress-bar progress-bar-info" style="width: 60%;">60%</div>
+        </div>
+        <hr>
+        <div class="progress">
+            <div class="progress-bar progress-bar-danger progress-bar-striped" style="width: 60%;">60%</div>
+        </div>
+        <hr>
+        <div class="progress">
+            <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 60%;">60%</div>
+        </div>
+        <hr>
+        <div class="progress">
+            <div class="progress-bar progress-bar-success" style="width: 40%;">40%</div>
+            <div class="progress-bar progress-bar-warning" style="width: 30%;">30%</div>
+            <div class="progress-bar progress-bar-danger" style="width: 20%;">20%</div>
+        </div>
+        <hr>
+    </div>
+</div>
+
+</div>
+
+<hr>
+
+
+<div class="container" id="breadcrumb">
+
+  <center><h1 style="color: blue; text-transform: uppercase;">Breadcrumb</h1></center><hr>
+
+  <h2>Breadcrumb</h2>
+
+  <p class="para">In Bootstrap 5.3, a breadcrumb is a navigation component that helps users understand their current location within a website or application's navigational hierarchy. It displays a trail of links that represents the path from the homepage to the current page.</p>
+
+  <p class="para">Bootstrap provides a built-in breadcrumb component that you can easily implement in your web development projects. The breadcrumb component consists of an ordered list (&lt;ol&gt;) with individual list items (&lt;li&gt;) representing each segment of the breadcrumb trail.</p>
+<p class="para">You can customize the breadcrumb component by adding additional list items, changing the text or URLs of the anchor elements, or applying different styles to the breadcrumb component using custom CSS or Bootstrap classes.</p>
+<p class="para">Bootstrap 5.3 also provides various utility classes and customization options to modify the appearance and behavior of the breadcrumb component. You can refer to the Bootstrap documentation for further details on advanced customization options.</p>
+
+<nav class="bg-success p-4">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page" style="color: #fff;">Home</li>
+  </ol>
+</nav>
+
+<nav>
+  <ol class="breadcrumb p-4 bg-warning">
+    <li class="breadcrumb-item"><a href="#" style="color: #fff;">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page"  style="color: #fff;">Library</li>
+  </ol>
+</nav>
+
+<nav>
+  <ol class="breadcrumb p-4 bg-danger">
+    <li class="breadcrumb-item"><a href="#"  style="color: #fff;">Home</a></li>
+    <li class="breadcrumb-item"><a href="#"  style="color: #fff;">Library</a></li>
+    <li class="breadcrumb-item active" aria-current="page"  style="color: #fff;">Data</li>
+  </ol>
+</nav>
+
+<ul class="points">
+	<li><b>&lt;nav&gt;: </b> This element represents a navigation section in HTML and is used to wrap the breadcrumb component.</li>
+	<li><b>&lt;ol class="breadcrumb"&gt;: </b> This is an ordered list element with the class "breadcrumb". It serves as the container for the breadcrumb items.</li>
+	<li><b>&lt;li class="breadcrumb-item active" aria-current="page"&gt; Home&lt;/li&gt;: </b>This is a list item element representing the breadcrumb segment. It has the class "breadcrumb-item" applied to it, indicating that it is part of the breadcrumb.</li>
+	<li><b>class="breadcrumb-item active":</b> The "breadcrumb-item" class is added to style the list item as a breadcrumb segment. The "active" class is also applied to signify that it represents the current page or location in the breadcrumb trail.</li>
+	<li><b>aria-current="page":</b> This attribute is added for accessibility purposes, specifying that the current page is represented by this breadcrumb item.</li>
+	<li><b>Home:</b> This is the text content displayed within the breadcrumb item, indicating the name of the segment (in this case, "Home").</li>
+</ul>
+
+<h2>Modify Breadcrumb Dividers</h2>
+<p class="para">In Bootstrap 5.3, you can modify the dividers used in the breadcrumb component by customizing the CSS or by using the available classes provided by Bootstrap. The dividers are the visual separators between the breadcrumb segments.</p>  
+<p class="para">By default, Bootstrap 5.3 uses the forward slash <b>("/")</b> as the divider between the breadcrumb items. However, you have the flexibility to change this divider or customize its appearance to match your design needs.</p>  
+<p class="para">To modify the breadcrumb dividers in Bootstrap 5.3, you can use the following classes:</p>  
+<p class="para"><b>breadcrumb-divider:</b> This class can be applied to any HTML element within the breadcrumb component to act as the divider. By default, it uses the forward slash <b>("/")</b> as the divider.</p>
+
+</div>
+
+
+<hr>
+
+
+
+<center><h1 style="color: #e01425; text-transform: uppercase;">--- Happy Coding ---</h1></center>
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+
