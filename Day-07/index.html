@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <title>Day 7 in Bootstrap - Coding Ranjith</title>
+
+  </head>
+  <body style="background-color: #fff;">
+
+    <center><h1 style="color: red; text-transform: uppercase;" >Day 7 in Bootstrap - Coding Ranjith</h1></center><hr>
+
+    <center>
+      <button class="btn btn-success btn-sm"><a href="#collapse" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Collapse</a></button>
+      <button class="btn btn-danger btn-sm"><a href="#tabs" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Tabs</a></button>
+      <button class="btn btn-primary btn-sm"><a href="#pills" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Pills</a></button>
+      <button class="btn btn-warning btn-sm"><a href="#dynamic-tabs" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Dynamic Tabs</a></button>
+    </center>
+
+<hr>
+
+<div class="container" id="collapse">
+
+  <center><h1 style="color: blue; text-transform: uppercase;">Collapse</h1></center><hr>
+
+  <h2>Collapse</h2>
+
+  <p class="para">Collapsible are useful when you want to hide and show large amount of content. </p>
+	<ul class="points">
+		<li> <b>collapse</b> - indicates a collapsible (content that will be shown or hidden ) element </li>
+		<li> ( Attribute ) <b>data-toggle="collapse"</b> - To control (show/hide) the collapsible content </li>
+	</ul>
+
+  <div class="row">
+    <div class="col-md-6">
+        <h4>Collapse</h4>
+        <button class="btn btn-success" data-toggle="collapse" data-target="#box">Click Me</button>
+        <div id="box" class="collapse" style="background-color: teal;color:white;padding: 5px;">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate delectus unde modi reprehenderit voluptatem nobis non ipsa fuga eligendi natus tenetur, assumenda cumque omnis officiis architecto debitis nisi ullam aspernatur, eum voluptates mollitia
+                dolores saepe ipsam inventore. Reprehenderit inventore iure hic laboriosam ipsam quae, perspiciatis soluta cupiditate officia cumque rem. Aut saepe necessitatibus soluta perferendis nisi voluptate optio maiores voluptas? Facilis
+                corporis totam tempora, qui tempore neque ipsam cumque velit? Ipsam, minus quam. Velit dolore unde repudiandae, similique recusandae at vitae quaerat omnis aperiam! Nihil placeat quam odit rerum totam dolor officiis repellendus
+                quo, sequi voluptate eligendi? Reprehenderit quod quos voluptate velit quia ex sit dolore reiciendis maxime architecto cumque quidem nesciunt laudantium veritatis, quasi hic. Mollitia molestiae voluptatibus quam incidunt accusamus
+                assumenda ea nesciunt nobis, alias, voluptate odit ex natus rerum. Similique laborum corporis eius dignissimos qui, voluptate esse quaerat dolores blanditiis a, at itaque inventore delectus cum laudantium illum nemo dolorum accusamus.
+                Cupiditate vitae aspernatur totam, delectus magni adipisci neque fugiat ex dolor obcaecati omnis, aliquid repellat explicabo harum minus! Voluptatum omnis hic eaque perferendis a cumque molestiae. Voluptate, sed. Totam quo atque
+                fugit impedit laborum ipsam! Et cumque excepturi quis perferendis vitae. Temporibus facilis harum minus impedit?
+            </p>
+        </div>
+        <hr>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <a href="#box2" data-toggle="collapse">Heading</a>
+            </div>
+            <div id="box2" class="panel-collapse collapse">
+                <div class="panel-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, adipisci?</div>
+                <div class="panel-footer">Footer</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>  
+
+<hr>
+
+<div class="container" id="tabs">
+
+  <center><h1 style="color: blue; text-transform: uppercase;">Tabs</h1></center><hr>
+
+  <h2>Tabs</h2>
+
+  <p>Tabs are used to separate content into different panes where each pane is viewable one at a time.</p>
+
+  <div class="row">
+    <div class="col-md-12">
+        <h4>Tabs</h4>
+        <hr>
+        <ul class="nav nav-tabs">
+            <li><a href="#">menu-1</a></li>
+            <li class="active"><a href="#">menu-2</a></li>
+            <li><a href="#">menu-3</a></li>
+            <li><a href="#">menu-4</a></li>
+            <li><a href="#">menu-5</a></li>
+        </ul>
+        <hr>
+        <ul class="nav nav-tabs">
+            <li><a href="#">menu-1</a></li>
+            <li class="active"><a href="#">menu-2</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    menu-3<span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Menu</a></li>
+                </ul>
+            </li>
+            <li><a href="#">menu-4</a></li>
+            <li><a href="#">menu-5</a></li>
+        </ul>
+    </div>
+</div>
+
+</div>  
+
+<hr>
+
+<div class="container" id="pills">
+
+  <center><h1 style="color: blue; text-transform: uppercase;">Pills</h1></center><hr>
+
+  <h2>Pills</h2>
+
+  <p>Tabs are used to separate content into different panes where each pane is viewable one at a time. <br>
+
+    To center/justify the tabs and pills, use the <b>.nav - justified </b>class.</p>
+
+    <div class="row">
+      <div class="col-md-12">
+          <h4>Pills</h4>
+          <hr>
+          <ul class="nav nav-pills">
+              <li class="active"><a href="#">menu-1</a></li>
+              <li><a href="#">menu-2</a></li>
+              <li><a href="#">menu-3</a></li>
+              <li><a href="#">menu-4</a></li>
+              <li><a href="#">menu-5</a></li>
+          </ul>
+          <hr>
+          <div class="col-md-3">
+              <ul class="nav nav-pills nav-stacked">
+                  <li class="active"><a href="#">menu-1</a></li>
+                  <li><a href="#">menu-2</a></li>
+                  <li><a href="#">menu-3</a></li>
+                  <li><a href="#">menu-4</a></li>
+                  <li><a href="#">menu-5</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+
+</div>  
+
+<hr>
+
+<div class="container" id="dynamic-tabs">
+
+  <center><h1 style="color: blue; text-transform: uppercase;">Dynamic Tabs</h1></center><hr>
+
+  <h2>Dynamic Tabs</h2>
+
+  <p class="para">Tabs are used to separate content into different panes where each pane is viewable one at a time.</p>
+	<div class="col-md-6">
+		<ul class="points">
+			<li> <b>data-toggle="tab" </b>&nbsp;&nbsp;&nbsp;- To make the tabs toggleable.</li>
+			<li> <b style="margin-right:60px;">.tab-pane </b>&nbsp;- To specifies unique tab. </li>
+			<li> <b style="margin-right:48px;">.tab-content</b>- To specifies tab content. </li>
+			<li> <b style="margin-right:90px;">.fade </b>- Tabs to fade in and out when clicking on it. </li>
+		</ul>
+		
+	</div>
+
+  <div class="row">
+    <div class="col-md-12">
+        <ul class="nav nav-tabs">
+            <li><a data-toggle="tab" href="#menu1">menu-1</a></li>
+            <li class="active"><a data-toggle="tab" href="#menu2">menu-2</a></li>
+            <li><a data-toggle="tab" href="#menu3">menu-3</a></li>
+            <li><a data-toggle="tab" href="#menu4">menu-4</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="menu1" class="tab-pane fade">
+                <h3>Menu-1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolorem eius ipsum tempore perspiciatis nemo totam beatae. Pariatur, vitae deleniti.</p>
+            </div>
+            <div id="menu2" class="tab-pane fade in active">
+                <h3>Menu-2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolorem eius ipsum tempore perspiciatis nemo totam beatae. Pariatur, vitae deleniti.</p>
+            </div>
+            <div id="menu3" class="tab-pane fade">
+                <h3>Menu-3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolorem eius ipsum tempore perspiciatis nemo totam beatae. Pariatur, vitae deleniti.</p>
+            </div>
+            <div id="menu4" class="tab-pane fade">
+                <h3>Menu-4</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolorem eius ipsum tempore perspiciatis nemo totam beatae. Pariatur, vitae deleniti.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>  
+
+
+<hr>
+
+
+
+<center><h1 style="color: #e01425; text-transform: uppercase;">--- Happy Coding ---</h1></center>
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+

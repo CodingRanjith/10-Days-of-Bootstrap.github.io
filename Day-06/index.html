@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Day 6 in Bootstrap - Coding Ranjith</title>
+
+  </head>
+  <body style="background-color: #fff;">
+
+    <center><h1 style="color: red; text-transform: uppercase;" >Day 6 in Bootstrap - Coding Ranjith</h1></center><hr>
+
+    <center>
+      <button class="btn btn-success btn-sm"><a href="#alert" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Alert</a></button>
+      <button class="btn btn-danger btn-sm"><a href="#list-groups" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">List Group</a></button>
+      <button class="btn btn-primary btn-sm"><a href="#panels" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Panels</a></button>
+      <button class="btn btn-warning btn-sm"><a href="#dropdown" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Dropdown</a></button>
+      <button class="btn btn-info btn-sm"><a href="#pager" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Pager</a></button>
+    </center>
+
+<hr>
+
+<div class="container" id="alert">
+
+  <center><h1 style="color: blue; text-transform: uppercase;">Alert</h1></center><hr>
+
+  <h2>Alert</h2>
+
+  <p class="para">
+    In Bootstrap 5.3, the Alert component provides a simple and versatile way to display notification messages or alerts to users. Alerts are commonly used to provide important information, warnings, success messages, or error messages to users in a visually noticeable manner.</p>
+    <p class="para">The Alert component in Bootstrap 5.3 comes with various built-in styles that can be easily applied to match the message's purpose and severity. These styles include success, warning, danger, and info, which are represented by corresponding CSS classes.</p>
+    <p class="para">To use the Alert component, you need to create a <b>&lt;div&gt;</b> element with the alert class and the desired style class <b>(e.g., alert-success, alert-warning, alert-danger, alert-info)</b>. Inside the <b>&lt;div&gt;</b>, you can place your message content or other HTML elements.</p>
+    <p class="para">Alerts can be made dismissible by including a close button. Adding the <b>alert-dismissible</b> class to the <b>&lt;div&gt;</b> and including a <b>&lt;button&gt;</b> element with the <b>close</b> class inside the alert allows users to dismiss or close the alert.</p>
+    <p class="para">The Alert component in Bootstrap 5.3 is highly customizable, allowing you to control its appearance, behavior, and positioning. You can further modify the styling, add icons, or incorporate additional interactivity using JavaScript or custom CSS classes.</p>
+
+    <div class="alert alert-primary">This is Sample Alert</div>
+<div class="alert alert-secondary">This is Sample Alert</div>
+<div class="alert alert-success">This is Sample Alert</div>
+<div class="alert alert-danger">This is Sample Alert</div>
+<div class="alert alert-warning">This is Sample Alert</div>
+<div class="alert alert-info">This is Sample Alert</div>
+<div class="alert alert-light">This is Sample Alert</div>
+<div class="alert alert-dark">This is Sample Alert</div>
+
+<h4 class="blog-sub-title">Alert With Link in Bootstrap</h4>
+<p class="para">The <b>alert-link</b> class in Bootstrap is a predefined CSS class specifically designed for styling links within an Alert component. It is used to create visually distinctive and interactive links within an alert message.</p>  
+<p class="para">When you apply the alert-link class to an anchor tag (&lt;a&gt;), it modifies the link's appearance to match the styling conventions of Bootstrap's Alert component. This class adds an underline to the link, changes its color, and adjusts its hover and focus effects to provide visual cues and improve accessibility.</p>  
+<p class="para">Here's an example of how to use the <b>alert-link</b> class in Bootstrap:</p>
+
+<div class="alert alert-primary">This is Sample Alert <a href="#" class="alert-link">Click Here </a></div>
+<div class="alert alert-secondary">This is Sample Alert <a href="#" class="alert-link">Click Here </a></div>
+<div class="alert alert-success">This is Sample Alert <a href="#" class="alert-link">Click Here </a></div>
+<div class="alert alert-danger">This is Sample Alert <a href="#" class="alert-link">Click Here </a></div>
+<div class="alert alert-warning">This is Sample Alert <a href="#" class="alert-link">Click Here </a></div>
+<div class="alert alert-info">This is Sample Alert <a href="#" class="alert-link">Click Here </a></div>
+<div class="alert alert-light">This is Sample Alert <a href="#" class="alert-link">Click Here </a></div>
+<div class="alert alert-dark">This is Sample Alert <a href="#" class="alert-link">Click Here </a></div>
+
+<p class="fw-semibold text-primary border-bottom border-primary py-3">Alert With Icons in Bootstrap</p>
+<div class="alert alert-primary">
+  <i class="bi-alarm"></i>
+  This is Sample Alert
+</div>
+<div class="alert alert-secondary d-flex align-items-center gap-3">
+  <i class="bi-apple"></i>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ipsum eligendi quia voluptates! Voluptatibus laudantium fuga veniam magni cum ea earum est accusantium corrupti iure ad animi nulla, dolores numquam.
+</div>
+
+<p class="fw-semibold text-primary border-bottom border-primary py-3">Alert With Additional Content in Bootstrap</p>
+
+<div class="alert alert-primary">
+  <h3 class="alert-heading">Sample Heading</h3>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, nisi cum. Sit iure reprehenderit numquam blanditiis qui, ab nobis, dolorem deserunt alias illum cum dolorum laudantium ipsum dicta a omnis.</p>
+  <hr />
+  <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi temporibus minima labore ipsa consequuntur sint!</p>
+</div>
+<hr class="my-3" />
+<p class="fw-semibold text-primary border-bottom border-primary py-3">Dismissing Alert in Bootstrap</p>
+<div class="alert alert-danger alert-dismissible fade show">
+  This is a Dismissible Alert
+  <button type="button" class="btn-close" style="font-size: 11px" data-bs-dismiss="alert"></button>
+</div>
+<div class="alert alert-warning alert-dismissible fade show">
+  This is a Dismissible Alert
+  <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+</div>
+
+<hr class="my-3" />
+<p class="text-primary fw-semibold">Dynamic Alert in Bootstrap</p>
+
+<div id="live-alert"></div>
+<button class="btn btn-primary" id="btn-alert">Show Alert</button>
+
+
+</div>  
+
+<hr>
+
+<div class="container" id="list-groups">
+
+  <center><h1 style="color: blue; text-transform: uppercase;">List Group</h1></center><hr>
+
+  <h2>List Group</h2>
+
+  <p>List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.</p>
+
+  <div class="row">
+    <div class="col-md-6">
+        <ul class="list-group">
+            <li class="list-group-item">Item-1</li>
+            <li class="list-group-item">Item-2</li>
+            <li class="list-group-item">Item-3</li>
+        </ul>
+        <hr>
+        <ul class="list-group">
+            <li class="list-group-item">Inbox <span class="badge">10</span></li>
+            <li class="list-group-item">Sent <span class="badge">5</span></li>
+            <li class="list-group-item">Outbox <span class="badge">0</span></li>
+        </ul>
+        <hr>
+        <div class="list-group">
+            <a href="#" class="list-group-item">Item-1</a>
+            <a href="#" class="list-group-item">Item-2</a>
+            <a href="#" class="list-group-item active">Item-3</a>
+            <a href="#" class="list-group-item">Item-4</a>
+            <a href="#" class="list-group-item disabled">Item-5</a>
+        </div>
+    </div>
+</div>
+
+</div>  
+
+<hr>
+
+<div class="container" id="panels">
+
+  <center><h1 style="color: blue; text-transform: uppercase;">Panels</h1></center><hr>
+
+  <h2>Panels</h2>
+
+  <p>A panel in bootstrap is a bordered box with some padding around its content.</p>
+
+  <div class="row">
+    <div class="col-md-8">
+        <div class="panel panel-default">
+            <div class="panel-heading">Heading</div>
+            <div class="panel-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, adipisci?</div>
+            <div class="panel-footer">Footer</div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">Heading</div>
+            <div class="panel-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, adipisci?</div>
+            <div class="panel-footer">Footer</div>
+        </div>
+        <div class="panel panel-danger">
+            <div class="panel-heading">Heading</div>
+            <div class="panel-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, adipisci?</div>
+            <div class="panel-footer">Footer</div>
+        </div>
+    </div>
+</div>
+
+</div>  
+
+<hr>
+
+<div class="container" id="dropdown">
+
+  <center><h1 style="color: blue; text-transform: uppercase;">Dropdown</h1></center><hr>
+
+  <h2>Dropdown</h2>
+
+  <p class="para">A  dropdown menu is a toggleable menu that allows the user to choose one value from a predefined list. </p>
+	<div class="col-md-7">
+		<table class="table table-bordered">
+			<thead>
+				<th> Class Name</th>
+				<th> Description</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>dropdown</td>
+					<td>indicates a dropdown menu.</td>
+				</tr>
+				<tr>
+					<td>dropdown-toggle</td>
+					<td>To open the dropdown menu.</td>
+				</tr>
+				<tr>
+					<td>dropdown-menu</td>
+					<td>a &lt;ul&gt; element to actually build the dropdown menu.</td>
+				</tr>
+				<tr>
+					<td>divider</td>
+					<td>used to separate links inside the dropdown menu with a thin horizontal border.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+  <div class="row">
+    <div class="col-md-12">
+        <h4>Dropdowns</h4>
+        <div class="dropdown">
+            <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                Courses
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">C</a></li>
+                <li><a href="#">C++</a></li>
+                <li><a href="#">Java</a></li>
+                <li class="divider"></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">Js</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="dropdown">
+            <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Courses <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li class="dropdown-header">Programming Courses</li>
+                <li class="active"><a href="#">C</a></li>
+                <li><a href="#">C++</a></li>
+                <li class="disabled"><a href="#">Java</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Web Design Courses</li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">Js</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="dropdown">
+            <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Courses <span class="caret"></span></button>
+            <ul class="dropdown-menu  dropdown-menu-right">
+                <li class="dropdown-header">Programming Courses</li>
+                <li class="active"><a href="#">C</a></li>
+                <li><a href="#">C++</a></li>
+                <li class="disabled"><a href="#">Java</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Web Design Courses</li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">Js</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="dropup">
+            <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Courses <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li class="dropdown-header">Programming Courses</li>
+                <li class="active"><a href="#">C</a></li>
+                <li><a href="#">C++</a></li>
+                <li class="disabled"><a href="#">Java</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Web Design Courses</li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">Js</a></li>
+            </ul>
+        </div>
+    </div>
+</div>    
+
+</div>  
+
+<hr>
+
+<div class="container" id="pager">
+
+  <center><h1 style="color: blue; text-transform: uppercase;">Pager</h1></center><hr>
+
+  <h2>Pager</h2>
+
+  <p>Pager is also a form of pagination. Pager provides previous and next buttons (links)</p>
+
+  <div class="row">
+    <div class="col-md-12">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam laborum quidem nostrum provident atque unde, natus neque cupiditate consectetur voluptas sunt similique, assumenda asperiores non? Mollitia dicta reprehenderit atque qui itaque
+            non deleniti soluta nihil eos. Beatae, a perspiciatis dolorem sequi cumque eveniet, velit maxime laborum dolore, quas odit. Consectetur, voluptate? Nemo natus et dolorem ut nobis qui reprehenderit magnam vitae. A, sunt assumenda dicta,
+            unde aperiam vel distinctio eum adipisci necessitatibus similique itaque iusto neque ex libero quia nesciunt blanditiis labore harum totam eaque veniam repellat. Magni mollitia odio inventore nostrum! Quibusdam alias dignissimos, ad
+            tempore rerum nemo, adipisci modi sint, voluptatibus quae animi officiis ea unde recusandae dolore eos dolor sapiente! Possimus hic iure aspernatur, id ab natus doloremque facere, deleniti eligendi ipsam architecto odit molestiae non
+            cum in vel dolorum quam? Culpa praesentium officia odit adipisci, pariatur, laborum impedit nihil distinctio corrupti ullam debitis perferendis! Facilis est vel earum quaerat reiciendis deserunt ullam iste magnam dicta sed officia
+            expedita blanditiis doloremque impedit aliquid possimus laborum at animi voluptates, asperiores voluptate officiis, temporibus consequatur. Fugit dicta facere voluptas nesciunt! Velit voluptatum, voluptate debitis officiis, quibusdam
+            eius itaque quae amet, possimus ipsam magnam eligendi doloribus dicta commodi quisquam delectus?</p>
+
+        <ul class="pager">
+            <li><a href="#">Previous</a></li>
+            <li><a href="#">Next</a></li>
+        </ul>
+        <ul class="pager">
+            <li class="previous"><a href="#">Previous</a></li>
+            <li class="next"><a href="#">Next</a></li>
+        </ul>
+    </div>
+</div>
+
+</div>  
+
+
+
+<hr>
+
+
+
+<center><h1 style="color: #e01425; text-transform: uppercase;">--- Happy Coding ---</h1></center>
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+
