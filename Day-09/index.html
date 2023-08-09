@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+    <title>Day 9 in Bootstrap - Coding Ranjith</title>
+
+  </head>
+  <body style="background-color: #fff;">
+
+    <center><h1 style="color: red; text-transform: uppercase;" >Day 9 in Bootstrap - Coding Ranjith</h1></center><hr>
+
+    <center>
+      <button class="btn btn-success btn-sm"><a href="#form-controls" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Form Controls</a></button>
+      <button class="btn btn-danger btn-sm"><a href="#form-layouts" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Form Layouts</a></button>
+      <button class="btn btn-primary btn-sm"><a href="#floating-labels" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Floating Labels</a></button>
+      <button class="btn btn-warning btn-sm"><a href="#form-validation" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Form Validation</a></button>
+    </center>
+
+<hr>  
+
+
+<div class="container" id="form-controls">
+
+  <center><h1 style="color: blue; text-transform: uppercase;">Form Controls</h1></center><hr>
+
+  <h2>Form Controls</h2>
+
+  <p class="bi-paragraph">In Bootstrap 5.3, there are various classes available to style and customize input boxes or form inputs. These classes allow you to apply predefined styles to your input elements, making them consistent and visually appealing. Here's an explanation of how to use input box classes in Bootstrap 5.3.</p>
+
+  <h5 class="text-danger mb-3">Form Controls in Bootstrap</h5>
+  <div class="row">
+    <div class="col-lg-6 col-md-8">
+      <!-- Textbox -->
+      <p class="fw-semibold text-primary border-bottom border-primary py-3">Form Control</p>
+      <div class="mb-3">
+        <label for="firstName" class="form-label">First Name</label>
+        <input type="text" id="firstName" placeholder="Enter First Name" class="form-control" />
+      </div>
+      <div class="mb-3">
+        <label for="lastName" class="form-label">Last Name</label>
+        <input type="text" id="lastName" placeholder="Enter Last Name" class="form-control" />
+      </div>
+
+      <p class="fw-semibold text-primary border-bottom border-primary py-3">Sizing</p>
+      <div class="mb-3">
+        <input type="text" placeholder="small" class="form-control form-control-sm" />
+      </div>
+      <div class="mb-3">
+        <input type="text" placeholder="medium" class="form-control" />
+      </div>
+      <div class="mb-3">
+        <input type="text" placeholder="medium" class="form-control form-control-lg" />
+      </div>
+
+      <p class="fw-semibold text-primary border-bottom border-primary py-3">Form text</p>
+      <div class="mb-3">
+        <label for="username" class="form-label">User Name</label>
+        <input type="text" class="form-control" id="username" placeholder="Enter User Name" />
+        <div id="usernameHelpBlock" class="form-text">Username must be 15 character [A-Z]</div>
+      </div>
+
+      <p class="fw-semibold text-primary border-bottom border-primary py-3">Disabled &amp; Readonly</p>
+      <div class="mb-3">
+        <input type="text" placeholder="Disabled Input" class="form-control" disabled />
+      </div>
+      <div class="mb-3">
+        <input type="text" placeholder="Readonly Input" class="form-control" readonly />
+      </div>
+
+      <p class="fw-semibold text-primary border-bottom border-primary py-3">Plain Text</p>
+      <div class="mb-3">
+        <input type="text" placeholder="Plain Text" class="form-control-plaintext" />
+      </div>
+
+      <!-- Input File -->
+
+      <p class="fw-semibold text-primary border-bottom border-primary py-3">HTML File Input</p>
+      <div class="mb-3">
+        <input type="file" />
+      </div>
+
+      <p class="fw-semibold text-primary border-bottom border-primary py-3">Bootstrap File Input</p>
+      <div class="mb-3">
+        <input type="file" class="form-control" />
+      </div>
+
+      <p class="fw-semibold text-primary border-bottom border-primary py-3">Bootstrap Multiple File Input</p>
+      <div class="mb-3">
+        <input type="file" class="form-control" multiple />
+      </div>
+
+      <p class="fw-semibold text-primary border-bottom border-primary py-3">Bootstrap Disabled File Input</p>
+      <div class="mb-3">
+        <input type="file" class="form-control" disabled />
+      </div>
+
+      <p class="fw-semibold text-primary border-bottom border-primary py-3">Bootstrap File Input Sizing</p>
+      <div class="mb-3">
+        <input type="file" class="form-control form-control-sm" />
+      </div>
+      <div class="mb-3">
+        <input type="file" class="form-control" />
+      </div>
+      <div class="mb-3">
+        <input type="file" class="form-control form-control-lg" />
+      </div>
+
+      <!-- Input Color -->
+      <p class="fw-semibold text-primary border-bottom border-primary py-3">HTML Color Input</p>
+      <div class="mb-3">
+        <input type="color" value="#563d7c" title="Choose your color" />
+      </div>
+      <p class="fw-semibold text-primary border-bottom border-primary py-3">Bootstrap Color Input</p>
+      <div class="mb-3">
+        <input type="color" class="form-control form-control-color" value="#563d7c" title="Choose your color" />
+      </div>
+
+      <!-- Datalists -->
+      <p class="fw-semibold text-primary border-bottom border-primary py-3">Datalist</p>
+      <div class="mb-3">
+        <label for="datalist" class="form-label">Datalist example</label>
+        <input class="form-control" list="datalistOptions" id="datalist" placeholder="Type to search..." />
+        <datalist id="datalistOptions">
+          <option value="C Program"></option>
+          <option value="Python"></option>
+          <option value="Java"></option>
+          <option value="Node.js"></option>
+          <option value="MongoDB"></option>
+        </datalist>
+      </div>
+
+      <!--col end -->
+    </div>
+
+    <!--row end -->
+  </div>
+
+</div>
+
+
+<hr>
+
+
+<div class="container" id="form-layouts">
+
+  <center><h1 style="color: blue; text-transform: uppercase;">Form Layouts</h1></center><hr>
+
+  <h2>Form Layouts</h2>
+  
+  <p class="para">In Bootstrap 5.3, you can create various form layouts using the grid system and predefined form classes. The grid system in Bootstrap allows you to divide the form into rows and columns, providing flexibility in arranging form elements. Here are a few common form layouts you can achieve in Bootstrap 5.3.</p>
+
+  <h4 class="blog-sub-title">Basic Stack form Layout</h4>
+<p class="para">In Bootstrap 5.3, you can create a basic stack form layout by applying the appropriate grid system and form classes. The stack layout will place form elements vertically on top of each other, providing a clean and organized form structure. Here's an example of a basic stack form layout in Bootstrap 5.3</p>
+
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" class="form-control" id="name" placeholder="Enter Name" />
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email Address</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter Email Address" />
+  </div>
+
+
+<h4 class="blog-sub-title">Form Grid</h4>
+<p class="para">In Bootstrap 5.3, you can create form layouts using the grid system to align form elements in a responsive manner. The grid system allows you to divide the form into rows and columns, providing flexibility in arranging and organizing form elements. Here's an example of how you can create a form grid layout in Bootstrap 5.3.</p>
+<p class="para">The form is divided into rows using the <b>.row</b> class, and the form elements are placed within columns created with the <b>.col-*</b> classes (e.g., .col-sm-6 for half width on small screens). The <b>.mb-3</b> class adds margin-bottom spacing between rows, and the <b>.mt-3</b> class adds margin-top spacing to the button row.</p>
+<p class="para">By utilizing the grid system, you can easily create a responsive form grid layout in Bootstrap 5.3, allowing your form elements to adapt to different screen sizes.</p>
+
+<div class="row g-3">
+  <div class="col">
+    <input type="text" class="form-control" placeholder="First name" />
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Last name" />
+  </div>
+</div>
+
+
+<h4 class="blog-sub-title">Horizontal Form Layout</h4>
+<ul class="points">
+	<li>Use the <b>.row</b> class to create a row for form elements.</li>
+	<li>Apply the  <b>.col-*</b> classes to divide the row into columns.</li>
+	<li>Use the  <b>.form-label</b> class for labels and <b>.form-control</b> class for form inputs.</li>
+</ul>
+
+<form>
+  <div class="row mb-3">
+    <label for="email" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="email" placeholder="Email Address" />
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="password" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="password" placeholder="Enter Password" />
+    </div>
+  </div>
+  <fieldset class="row mb-3">
+    <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gender" id="male" value="male" checked />
+        <label class="form-check-label" for="male"> Male </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gender" id="female" value="female" />
+        <label class="form-check-label" for="female"> Female </label>
+      </div>
+    </div>
+  </fieldset>
+  <div class="row mb-3">
+    <div class="col-sm-10 offset-sm-2">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="agree" />
+        <label class="form-check-label" for="agree"> I agree Terms & Condition </label>
+      </div>
+    </div>
+  </div>
+</form>
+
+<h4 class="blog-sub-title">Horizontal form Label Sizing</h4>
+<p class="para">In Bootstrap 5.3, you can adjust the size of horizontal form labels using predefined classes. This allows you to control the visual presentation and alignment of labels within a horizontal form layout. Here's an explanation of horizontal form label sizing in Bootstrap 5.3</p>
+<p class="para">Bootstrap provides the following classes for horizontal form label sizing:</p>
+<ul class="points">
+	<li><b>.col-form-label-sm:</b> This class makes the labels smaller, suitable for compact form layouts.</li>
+	<li><b>.col-form-label-lg:</b> This class makes the labels larger, ideal for emphasizing important form labels.</li>
+</ul>
+
+<div class="row mb-3">
+  <label for="email" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+  <div class="col-sm-10">
+    <input type="email" class="form-control form-control-sm" id="email" placeholder="col-form-label-sm" />
+  </div>
+</div>
+<div class="row mb-3">
+  <label for="email" class="col-sm-2 col-form-label">Email</label>
+  <div class="col-sm-10">
+    <input type="email" class="form-control" id="email" placeholder="col-form-label" />
+  </div>
+</div>
+<div class="row">
+  <label for="email" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+  <div class="col-sm-10">
+    <input type="email" class="form-control form-control-lg" id="email" placeholder="col-form-label-lg" />
+  </div>
+</div>
+
+
+
+</div>
+
+
+<hr>
+
+
+<div class="container" id="floating-labels">
+
+  <center><h1 style="color: blue; text-transform: uppercase;">Floating Labels</h1></center><hr>
+
+  <h2>Floating Labels</h2>
+
+  <p>In Bootstrap 5.3, floating labels are a form design feature that provides an elegant and interactive way to display labels for form inputs. A floating label appears above the form input when the user interacts with it, such as clicking on the input field or entering text. The floating label then moves up and floats above the input, providing context and guidance to the user.</p>
+
+  <h4 class="text-danger mb-3">Floating Label in Bootstrap</h4>
+
+  <div class="row">
+    <div class="col-6">
+      <p class="fw-semibold text-primary border-bottom border-primary py-3">Floating Label in Bootstrap</p>
+      <div class="mb-3 form-floating">
+        <input type="text" id="email" class="form-control" placeholder="Email Address" />
+        <label for="email">Email Address</label>
+      </div>
+      <div class="mb-3 form-floating">
+        <input type="password" id="email" class="form-control" placeholder="Password" />
+        <label for="email">Password</label>
+      </div>
+
+      <p class="fw-semibold text-primary border-bottom border-primary py-3">If value already defined label will automatically adjuct to floated Position</p>
+
+      <div class="mb-3 form-floating">
+        <input type="text" id="name" class="form-control" placeholder="Full Name" value="Tutor Joes" />
+        <label for="name">Full Name</label>
+      </div>
+      <p class="fw-semibold text-primary border-bottom border-primary py-3">Form Validation Class</p>
+      <div class="mb-3 form-floating">
+        <input type="text" id="fname" class="form-control is-invalid" placeholder="First Name" value="test" />
+        <label for="fname">First Name</label>
+      </div>
+
+      <p class="fw-semibold text-primary border-bottom border-primary py-3">Textarea</p>
+      <div class="form-floating mb-3">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+        <label for="floatingTextarea">Comments</label>
+      </div>
+
+      <p class="fw-semibold text-primary border-bottom border-primary py-3">Selects</p>
+      <div class="form-floating mb-3">
+        <select class="form-select" id="floatingSelect">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <label for="floatingSelect">Works with selects</label>
+      </div>
+
+      <p class="fw-semibold text-primary border-bottom border-primary py-3">Readonly plaintext</p>
+      <div class="form-floating mb-3">
+        <input type="email" readonly class="form-control-plaintext" id="floatingEmptyPlaintextInput" placeholder="name@example.com" />
+        <label for="floatingEmptyPlaintextInput">Empty input</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="email" readonly class="form-control-plaintext" id="floatingPlaintextInput" placeholder="name@example.com" value="name@example.com" />
+        <label for="floatingPlaintextInput">Input with value</label>
+      </div>
+
+      <p class="fw-semibold text-primary border-bottom border-primary py-3">Input Groups</p>
+      <div class="input-group mb-3">
+        <span class="input-group-text">@</span>
+        <div class="form-floating">
+          <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username" />
+          <label for="floatingInputGroup1">Username</label>
+        </div>
+      </div>
+
+      <div class="input-group mb-3 has-validation">
+        <span class="input-group-text">@</span>
+        <div class="form-floating is-invalid">
+          <input type="text" id="txt" placeholder="username" class="form-control is-invalid" />
+          <label for="txt">Username</label>
+        </div>
+
+        <div class="invalid-feedback">Please Enter Username</div>
+      </div>
+      <!--col-6-->
+    </div>
+  </div>
+
+  <div class="row g-2">
+    <div class="col-md-4">
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="mdo@example.com" />
+        <label for="floatingInputGrid">Email address</label>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-floating">
+        <select class="form-select" id="floatingSelectGrid">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <label for="floatingSelectGrid">Works with selects</label>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+<hr>
+
+
+<div class="container" id="form-validation">
+
+  <center><h1 style="color: blue; text-transform: uppercase;">Form Validation</h1></center><hr>
+
+  <h2>Form Validation</h2>
+
+  <p class="para">In Bootstrap 5.3, form validation is a powerful feature that allows you to validate user input and provide visual feedback to indicate whether the input is valid or not. Form validation can be implemented on the client-side using Bootstrap's built-in classes and JavaScript, providing a seamless user experience. Here's an explanation of form validation in Bootstrap 5.3</p>
+
+  <h4 class="blog-sub-title">Client-side Validation:</h4>
+<p class="para">Bootstrap 5.3 offers a range of CSS classes to facilitate client-side form validation. These classes are applied to form elements to indicate their validation state. The main classes are</p>
+<ul class="points">
+	<li><b>.is-valid:</b> Applied to indicate valid input.</li>
+	<li><b>.is-invalid:</b> Applied to indicate invalid input.</li>
+</ul>
+<p class="para">Additionally, Bootstrap provides validation styles for feedback messages associated with form controls:</p>
+<ul class="points">
+	<li><b>.valid-feedback:</b> Applied to provide feedback for valid input.</li>
+	<li><b>.invalid-feedback:</b>Applied to provide feedback for invalid input.</li>
+</ul>
+<h4 class="blog-sub-title">Required Fields:</h4>
+<p class="para">Bootstrap 5.3 offers a range of CSS classes to facilitate client-side form validation. These classes are applied to form elements to indicate their validation state. The main classes are</p>
+<h4 class="blog-sub-title">Form Validation Classes:</h4>
+<p class="para">Bootstrap 5.3 introduces new form validation classes that can be applied to form elements to trigger validation styling. These classes are:</p>
+<ul class="points">
+	<li><b>.form-control:</b> Applied to form inputs for styling and consistent appearance.</li>
+	<li><b>.form-check-input:</b> Applied to checkboxes and radio buttons.</li>
+	<li><b>.form-select:</b> Applied to select elements for dropdowns.</li>
+</ul>
+<h4 class="blog-sub-title">Custom Validation:</h4>
+<p class="para">Bootstrap 5.3 allows you to implement custom validation by adding the <b>data-bs-validation</b> attribute to form elements. You can define your own validation logic using JavaScript and apply custom validation styles accordingly.</p>
+<h4 class="blog-sub-title">Validation Feedback:</h4>
+<p class="para">Bootstrap provides the <b>.form-control-feedback</b> class to display icons or other indicators of validation status alongside form controls.</p>
+
+<h4 class="blog-sub-title">Event Listener:</h4>
+<p class="para">The code starts by adding an event listener to the form element with the ID "myForm". The event being listened to is the "submit" event, which is triggered when the user tries to submit the form.</p>
+<h4 class="blog-sub-title">Form Validation:</h4>
+<p class="para">Inside the event listener, the code first checks if the form is valid using the <b>form.checkValidity()</b> method. If the form is not valid, the event's default behavior is prevented, and further propagation of the event is stopped.</p>
+<h4 class="blog-sub-title">Password Validation:</h4>
+<p class="para">The code performs password validation by comparing the values of the password and confirmPassword input fields. If the passwords do not match, the <b>setCustomValidity()</b> method is called on the confirmPassword input element, setting a custom error message. Otherwise, the custom validity is cleared.</p>
+<h4 class="blog-sub-title">Phone Validation:</h4>
+<p class="para">Phone number validation is performed using a regular expression (<b>phoneRegex</b>). The code checks if the phone number input value matches the regular expression. If it doesn't, the <b>setCustomValidity()</b> method is called on the phoneInput element to set a custom error message.</p>
+<h4 class="blog-sub-title">Pincode Validation:</h4>
+<p class="para">Similar to phone validation, pincode validation is performed using a regular expression (<b>pinRegex</b>). The code checks if the pincode input value matches the regular expression. If it doesn't, the<b> setCustomValidity()</b> method is called on the pincodeInput element to set a custom error message.</p>
+<h4 class="blog-sub-title">Custom Date Validation:</h4>
+<p class="para">The code performs custom validation for start and end dates. It compares the values of the startDate and endDate input fields, converting them into Date objects. If the start date is not before the end date, error messages are set using the <b>setCustomValidity()</b> method on both input fields.</p>
+<h4 class="blog-sub-title">Custom Validation for Select Field:</h4>
+<p class="para">The code checks if a city has been selected in the select field with the ID "city". If no city is selected (i.e., the value is empty), a custom error message is set using the <b>setCustomValidity()</b> method.</p>
+<h4 class="blog-sub-title">Adding Validation Classes:</h4>
+<p class="para">After performing all the validations, the code adds the "was-validated" class to the form element. This class is part of Bootstrap and triggers the display of validation styles and messages defined in the CSS.</p>
+
+<div class="row">
+  <!--Row Start-->
+
+  <div class="offset-lg-3 offset-md-1 col-lg-6 col-md-10">
+    <h6 class="fw-semibold fs-5 text-uppercase text-primary">Student Registration Form</h6>
+    <div class="bg-primary bg-opacity-10 my-4 p-3 d-flex align-items-center justify-content-between rounded">
+      <span class="fw-semibold">Basic Information</span>
+      <i class="bi bi-bookmark-fill text-secondary fs-5"></i>
+    </div>
+
+    <form id="myForm" novalidate>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" required placeholder="Enter Full Name" />
+        <div class="invalid-feedback">Please enter your name.</div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Gender</label>
+        <div class="d-flex">
+          <div class="form-check me-3">
+            <input class="form-check-input" type="radio" name="gender" id="male" checked required />
+            <label class="form-check-label" for="male"> Male </label>
+          </div>
+          <div class="form-check me-3">
+            <input class="form-check-input" type="radio" name="gender" id="female" />
+            <label class="form-check-label" for="female"> Female </label>
+          </div>
+        </div>
+        <div class="invalid-feedback" id="gender-error">Please select your gender.</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required placeholder="Enter Email Address" />
+        <div class="invalid-feedback">Please enter a valid email address.</div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" required placeholder="Enter Password" />
+          <div class="invalid-feedback">Please enter a password.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="confirmPassword" class="form-label">Confirm Password</label>
+          <input type="password" class="form-control" id="confirmPassword" required placeholder="Enter Confirm Password" />
+          <div class="invalid-feedback">Passwords do not match.</div>
+        </div>
+      </div>
+
+      <div class="bg-info bg-opacity-10 my-4 p-3 d-flex align-items-center justify-content-between rounded">
+        <span class="fw-semibold">Contact Information</span>
+        <i class="bi bi-phone-fill text-secondary fs-5"></i>
+      </div>
+
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone Number</label>
+        <input type="text" class="form-control" id="phone" required pattern="[0-9]{10}" placeholder="Enter Phone Number" />
+        <div class="invalid-feedback">Please enter a valid 10-digit phone number.</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="address" class="form-label">Address</label>
+        <textarea class="form-control" id="address" required placeholder="Enter Complete Address"></textarea>
+        <div class="invalid-feedback">Please enter your address.</div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="city" class="form-label">City</label>
+          <select class="form-select" id="city" required>
+            <option value="">Select a City</option>
+            <option value="Salem">Salem</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Hosur">Hosur</option>
+          </select>
+          <div class="invalid-feedback">Please select a City.</div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="pincode" class="form-label">Pincode</label>
+          <input type="text" class="form-control" id="pincode" required placeholder="Enter Pincode" />
+          <div class="invalid-feedback">Please enter a valid pincode.</div>
+        </div>
+      </div>
+
+      <div class="bg-warning bg-opacity-10 my-4 p-3 d-flex align-items-center justify-content-between rounded">
+        <span class="fw-semibold">Other Information</span>
+        <i class="bi bi-book-fill text-secondary fs-5"></i>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="startDate" class="form-label">Start Date</label>
+          <input type="date" class="form-control" id="startDate" required />
+          <div class="invalid-feedback">Start date must be before the end date.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="endDate" class="form-label">End Date</label>
+          <input type="date" class="form-control" id="endDate" required />
+          <div class="invalid-feedback">End date must be after the start date.</div>
+        </div>
+      </div>
+
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="agree" required />
+        <label class="form-check-label" for="agree">I agree to the terms and conditions</label>
+        <div class="invalid-feedback">You must agree to the terms and conditions.</div>
+      </div>
+      <div class="mb-3 d-flex justify-content-end">
+        <button type="submit" class="btn btn-primary me-2">Register Now</button>
+        <button type="reset" class="btn btn-danger">Clear Details</button>
+      </div>
+    </form>
+  </div>
+
+  <!--Row End-->
+</div>
+
+</div>
+
+
+
+<hr>
+
+
+
+<center><h1 style="color: #e01425; text-transform: uppercase;">--- Happy Coding ---</h1></center>
+
+
+
+<script>
+  (function () {
+    "use strict";
+    var form = document.getElementById("myForm");
+
+    form.addEventListener("submit", function (event) {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+
+      // Password validation
+      let passwordInput = document.getElementById("password");
+      let confirmPasswordInput = document.getElementById("confirmPassword");
+      if (passwordInput.value && confirmPasswordInput.value !== passwordInput.value) {
+        confirmPasswordInput.setCustomValidity("Passwords do not match.");
+      } else {
+        confirmPasswordInput.setCustomValidity("");
+      }
+
+      //Phone Validation
+      let phoneInput = document.getElementById("phone");
+      let phoneRegex = /^[0-9]{10}$/;
+      if (!phoneRegex.test(phoneInput.value)) {
+        phoneInput.setCustomValidity("Please enter a valid 10-digit phone number.");
+      } else {
+        phoneInput.setCustomValidity("");
+      }
+
+      //Pincode Validation
+      let pincodeInput = document.getElementById("pincode");
+      let pinRegex = /^\d{6}$/;
+      if (!pinRegex.test(pincodeInput.value)) {
+        pincodeInput.setCustomValidity("Please enter a valid pincode.");
+      } else {
+        pincodeInput.setCustomValidity("");
+      }
+
+      // Custom validation for start and end dates
+      let startDateInput = document.getElementById("startDate");
+      let endDateInput = document.getElementById("endDate");
+      let startDate = new Date(startDateInput.value);
+      let endDate = new Date(endDateInput.value);
+
+      if (startDate >= endDate) {
+        startDateInput.setCustomValidity("Start date must be before the end date.");
+        endDateInput.setCustomValidity("End date must be after the start date.");
+      } else {
+        startDateInput.setCustomValidity("");
+        endDateInput.setCustomValidity("");
+      }
+
+      // Custom validation for select field
+      var cityInput = document.getElementById("city");
+      if (cityInput.value === "") {
+        cityInput.setCustomValidity("Please select a city.");
+      } else {
+        cityInput.setCustomValidity("");
+      }
+
+      form.classList.add("was-validated");
+    });
+  })();
+</script>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+
