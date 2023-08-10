@@ -1,0 +1,1033 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <title>Day 8 in Bootstrap - Coding Ranjith</title>
+
+  </head>
+  <body style="background-color: #fff;">
+
+    <center><h1 style="color: red; text-transform: uppercase;" >Day 8 in Bootstrap - Coding Ranjith</h1></center><hr>
+
+    <center>
+      <button class="btn btn-success btn-sm"><a href="#accordion" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Accordion</a></button>
+      <button class="btn btn-danger btn-sm"><a href="#cards" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Cards</a></button>
+      <button class="btn btn-primary btn-sm"><a href="#carousel" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Carousel</a></button>
+      <button class="btn btn-warning btn-sm"><a href="#modal" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Modal</a></button>
+      <button class="btn btn-info btn-sm"><a href="#spinners" style="text-decoration: none; font-weight: 600; color: #fff; text-transform: uppercase;">Spinners</a></button>
+    </center>
+
+<hr>
+
+<div class="container" id="accordion">
+
+  <center><h1 style="color: blue; text-transform: uppercase;">Accordion</h1></center><hr>
+
+  <h2>Accordion</h2>
+
+<p class="para">Accordion in Bootstrap 5.3 is a UI component that allows you to organize and display collapsible content sections. It provides an intuitive way to present information in a compact and space-efficient manner.</p>
+<p class="para">The Accordion component consists of a series of collapsible panels, where each panel consists of a header and a body. The header serves as a clickable element that users can interact with to expand or collapse the corresponding panel's body content.</p>
+<p class="para">When a panel is expanded, its body content is revealed, and when it is collapsed, the content is hidden. Only one panel can be open at a time, meaning that when a panel is expanded, any other open panels will automatically collapse.</p>
+<p class="para">Bootstrap 5.3 provides a range of classes and JavaScript functionality to easily implement the Accordion component. By utilizing the appropriate CSS classes, you can customize the appearance of the accordion to match your design requirements.</p>
+<p class="para">Furthermore, Bootstrap 5.3 includes optional collapse animations, allowing for smooth and visually appealing transitions when expanding or collapsing panels.</p>
+<p class="para">The Accordion component in Bootstrap 5.3 is a valuable tool for creating organized and interactive content layouts, such as FAQs, product descriptions, or any scenario where you want to present information in a collapsible manner while optimizing space utilization.</p>
+
+<div class="col-md-12">
+  <p class="fw-semibold text-primary border-bottom border-primary py-3">Accordion in Bootstrap</p>
+
+  <div class="accordion mt-5" id="accordion1">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button data-bs-toggle="collapse" data-bs-target="#box" class="accordion-button" type="button">Question 1</button>
+      </h2>
+      <div id="box" class="accordion-collapse collapse show" data-bs-parent="#accordion1">
+        <div class="accordion-body">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum iusto corrupti enim quas doloribus ad, provident repellendus excepturi natus dignissimos modi distinctio porro reprehenderit voluptas, facere sequi nostrum illum quod?</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button data-bs-toggle="collapse" data-bs-target="#box2" class="accordion-button" type="button">Question 2</button>
+      </h2>
+      <div id="box2" class="accordion-collapse collapse" data-bs-parent="#accordion1">
+        <div class="accordion-body">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum iusto corrupti enim quas doloribus ad, provident repellendus excepturi natus dignissimos modi distinctio porro reprehenderit voluptas, facere sequi nostrum illum quod?</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button data-bs-toggle="collapse" data-bs-target="#box3" class="accordion-button" type="button">Question 3</button>
+      </h2>
+      <div id="box3" class="accordion-collapse collapse" data-bs-parent="#accordion1">
+        <div class="accordion-body">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum iusto corrupti enim quas doloribus ad, provident repellendus excepturi natus dignissimos modi distinctio porro reprehenderit voluptas, facere sequi nostrum illum quod?</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+<h4 class="blog-sub-title">Accordion with Flush in Bootstrap</h4>
+<p class="para">Accordion with Flush is a variation of the Accordion component in Bootstrap 5.3 that provides a sleek and seamless appearance by removing the borders and spacing between the panels. This design approach is often used to achieve a modern and streamlined look.</p>  
+<p class="para">In an Accordion with Flush, the panels are aligned edge-to-edge, creating a continuous and visually cohesive accordion layout. The absence of borders and gaps between panels allows for a more fluid and integrated presentation of content.</p>  
+<p class="para">By using the appropriate CSS classes provided by Bootstrap 5.3, you can easily implement the Accordion with Flush style. The classes typically involve adding the "accordion-flush" class to the parent container element of the accordion.</p>  
+<p class="para">The functionality of the Accordion with Flush remains the same as the regular Accordion component. Each panel consists of a header and a body, and users can expand or collapse panels by interacting with the headers. Only one panel can be open at a time, and the collapse animation can still be applied for a smooth transition.</p>  
+
+
+<ol class="points">
+	<li><b>accordion: </b>This class should be added to the parent container of the Accordion component.</li>
+
+<li><b>accordion-item:</b> This class is applied to each individual panel or item within the Accordion.</li>
+
+<li><b>accordion-header:</b> This class should be added to the header element of each panel. It represents the clickable area that users can interact with to expand or collapse the panel.</li>
+
+<li><b>accordion-button: </b>This class is added to the button element within the header. It indicates that it serves as a trigger for expanding or collapsing the panel.</li>
+
+<li><b>accordion-collapse:</b> This class is added to the collapsible content container within each panel. It defines the area that expands or collapses when the panel is toggled.</li>
+
+<li><b>collapse: </b>This class is used in conjunction with accordion-collapse to define the collapsible content within each panel.</li>
+
+<li><b>show: </b>This class is applied to the accordion-collapse element when a panel is in the expanded state. It displays the content of the panel.</li>
+</ol>
+
+
+<div class="accordion accordion-flush mt-5" id="accordion2">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button data-bs-toggle="collapse" data-bs-target="#box21" class="accordion-button" type="button">Question 1</button>
+    </h2>
+    <div id="box21" class="accordion-collapse collapse show" data-bs-parent="#accordion2">
+      <div class="accordion-body">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum iusto corrupti enim quas doloribus ad, provident repellendus excepturi natus dignissimos modi distinctio porro reprehenderit voluptas, facere sequi nostrum illum quod?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button data-bs-toggle="collapse" data-bs-target="#box22" class="accordion-button" type="button">Question 2</button>
+    </h2>
+    <div id="box22" class="accordion-collapse collapse" data-bs-parent="#accordion2">
+      <div class="accordion-body">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum iusto corrupti enim quas doloribus ad, provident repellendus excepturi natus dignissimos modi distinctio porro reprehenderit voluptas, facere sequi nostrum illum quod?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button data-bs-toggle="collapse" data-bs-target="#box23" class="accordion-button" type="button">Question 3</button>
+    </h2>
+    <div id="box23" class="accordion-collapse collapse" data-bs-parent="#accordion2">
+      <div class="accordion-body">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum iusto corrupti enim quas doloribus ad, provident repellendus excepturi natus dignissimos modi distinctio porro reprehenderit voluptas, facere sequi nostrum illum quod?</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<p class="fw-semibold text-primary border-bottom border-primary py-3">Accordion Always open in Bootstrap</p>
+          <p>Omit the <mark>data-bs-parent</mark> attribute on each .accordion-collapse to make accordion items stay open when another item is opened.</p>
+          <div class="accordion mt-5" id="accordion3">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button data-bs-toggle="collapse" data-bs-target="#box31" class="accordion-button" type="button">Question 1</button>
+              </h2>
+              <div id="box31" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum iusto corrupti enim quas doloribus ad, provident repellendus excepturi natus dignissimos modi distinctio porro reprehenderit voluptas, facere sequi nostrum illum quod?</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button data-bs-toggle="collapse" data-bs-target="#box32" class="accordion-button" type="button">Question 2</button>
+              </h2>
+              <div id="box32" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum iusto corrupti enim quas doloribus ad, provident repellendus excepturi natus dignissimos modi distinctio porro reprehenderit voluptas, facere sequi nostrum illum quod?</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button data-bs-toggle="collapse" data-bs-target="#box33" class="accordion-button" type="button">Question 3</button>
+              </h2>
+              <div id="box33" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum iusto corrupti enim quas doloribus ad, provident repellendus excepturi natus dignissimos modi distinctio porro reprehenderit voluptas, facere sequi nostrum illum quod?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+</div>
+
+
+<hr>
+
+<div class="container" id="cards">
+
+  <center><h1 style="color: blue; text-transform: uppercase;">Cards</h1></center><hr>
+
+  <h2>Cards</h2>
+
+  <section class="section">
+    <div class="row align-items-top">
+      <div class="col-lg-6">
+
+        <!-- Default Card -->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Default Card</h5>
+            Ut in ea error laudantium quas omnis officia. Sit sed praesentium voluptas. Corrupti inventore consequatur nisi necessitatibus modi consequuntur soluta id. Enim autem est esse natus assumenda. Non sunt dignissimos officiis expedita. Consequatur sint repellendus voluptas.
+            Quidem sit est nulla ullam. Suscipit debitis ullam iusto dolorem animi dolorem numquam. Enim fuga ipsum dolor nulla quia ut.
+            Rerum dolor voluptatem et deleniti libero totam numquam nobis distinctio. Sit sint aut. Consequatur rerum in.
+          </div>
+        </div><!-- End Default Card -->
+
+        <!-- Card with header and footer -->
+        <div class="card">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h5 class="card-title">Card with header and footer</h5>
+            Ut in ea error laudantium quas omnis officia. Sit sed praesentium voluptas. Corrupti inventore consequatur nisi necessitatibus modi consequuntur soluta id. Enim autem est esse natus assumenda. Non sunt dignissimos officiis expedita. Consequatur sint repellendus voluptas.
+            Quidem sit est nulla ullam. Suscipit debitis ullam iusto dolorem animi dolorem numquam. Enim fuga ipsum dolor nulla quia ut.
+            Rerum dolor voluptatem et deleniti libero totam numquam nobis distinctio. Sit sint aut. Consequatur rerum in.
+          </div>
+          <div class="card-footer">
+            Footer
+          </div>
+        </div><!-- End Card with header and footer -->
+
+        <!-- Card with an image on left -->
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="https://images2.fanpop.com/images/photos/4900000/Nature-random-4902227-1600-1200.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card with an image on left</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Card with an image on left -->
+
+      </div>
+
+      <div class="col-lg-3">
+
+        <!-- Card with an image on top -->
+        <div class="card">
+          <img src="https://images2.fanpop.com/images/photos/4900000/Nature-random-4902227-1600-1200.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card with an image on top</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div><!-- End Card with an image on top -->
+
+        <!-- Card with an image on bottom -->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card with an image on bottom</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <img src="https://images2.fanpop.com/images/photos/4900000/Nature-random-4902227-1600-1200.jpg" class="card-img-bottom" alt="...">
+        </div><!-- End Card with an image on bottom -->
+
+      </div>
+
+      <div class="col-lg-3">
+
+        <!-- Card with an image overlay -->
+        <div class="card">
+          <img src="https://images2.fanpop.com/images/photos/4900000/Nature-random-4902227-1600-1200.jpg" class="card-img-top" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Card with an image overlay</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div><!-- End Card with an image overlay -->
+
+        <!-- Card with titles, buttons, and links -->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card with titles, buttons, and links</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text"><a href="#" class="btn btn-primary">Button</a></p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div><!-- End Card with titles, buttons, and links -->
+
+        <!-- Special title treatmen -->
+        <div class="card text-center">
+          <div class="card-header">
+            <ul class="nav nav-pills card-header-pills">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Active</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div><!-- End Special title treatmen -->
+
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
+
+<hr>
+
+
+<div class="container" id="carousel">
+
+  <center><h1 style="color: blue; text-transform: uppercase;">Carousel</h1></center><hr>
+
+  <h2>Carousel</h2>
+
+  <p>The Carousel plugin is a component for cycling through elements, like a slideshow.
+
+   <b> Plugins can be included individually "carousel.js" or "bootstrap.js" or "bootstrap.min.js" </b>.</p>
+
+   
+   <section class="section">
+    <div class="row">
+      <div class="col-lg-6">
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Slides only</h5>
+
+            <!-- Slides only carousel -->
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://images8.alphacoders.com/682/thumb-1920-682878.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://keralakaumudi.com/web-news/en/2023/05/NMAN0413506/image/tiger.1.559435.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://lemonbayconservancy.org/wp-content/uploads/2022/01/Monarch-male-basking-on-a-cool-day-FL-yard-1.11.22-BIll-Dunson-IMG_5694-aa-1180x520.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div><!-- End Slides only carousel-->
+
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">With indicators</h5>
+
+            <!-- Slides with indicators -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://images8.alphacoders.com/682/thumb-1920-682878.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://keralakaumudi.com/web-news/en/2023/05/NMAN0413506/image/tiger.1.559435.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://lemonbayconservancy.org/wp-content/uploads/2022/01/Monarch-male-basking-on-a-cool-day-FL-yard-1.11.22-BIll-Dunson-IMG_5694-aa-1180x520.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+
+            </div><!-- End Slides with indicators -->
+
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Carousel with fade transition</h5>
+            <p>Add <code>.carousel-fade</code> to your carousel to animate slides with a fade transition instead of a slide.</p>
+
+            <!-- Slides with fade transition -->
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://images8.alphacoders.com/682/thumb-1920-682878.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://keralakaumudi.com/web-news/en/2023/05/NMAN0413506/image/tiger.1.559435.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://lemonbayconservancy.org/wp-content/uploads/2022/01/Monarch-male-basking-on-a-cool-day-FL-yard-1.11.22-BIll-Dunson-IMG_5694-aa-1180x520.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+
+            </div><!-- End Slides with fade transition -->
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-6">
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">With controls</h5>
+
+            <!-- Slides with controls -->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://images8.alphacoders.com/682/thumb-1920-682878.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://keralakaumudi.com/web-news/en/2023/05/NMAN0413506/image/tiger.1.559435.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://lemonbayconservancy.org/wp-content/uploads/2022/01/Monarch-male-basking-on-a-cool-day-FL-yard-1.11.22-BIll-Dunson-IMG_5694-aa-1180x520.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+
+            </div><!-- End Slides with controls -->
+
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">With captions</h5>
+
+            <!-- Slides with captions -->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://images8.alphacoders.com/682/thumb-1920-682878.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://keralakaumudi.com/web-news/en/2023/05/NMAN0413506/image/tiger.1.559435.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://lemonbayconservancy.org/wp-content/uploads/2022/01/Monarch-male-basking-on-a-cool-day-FL-yard-1.11.22-BIll-Dunson-IMG_5694-aa-1180x520.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+
+            </div><!-- End Slides with captions -->
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div>
+
+
+<hr>
+
+
+<div class="container" id="modal">
+
+  <center><h1 style="color: blue; text-transform: uppercase;">Modal</h1></center><hr>
+
+  <h2>Modal</h2>
+
+  <p>The Modal plugin is a dialog box/popup window that is displayed on top of the current page</p>
+  
+
+     <section class="section">
+      <div class="row">
+        <div class="col-lg-6">
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Basic Modal</h5>
+              <p>Toggle a working modal demo by clicking the button below. It will slide down and fade in from the top of the page</p>
+
+              <!-- Basic Modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#basicModal">
+                Basic Modal
+              </button>
+              <div class="modal fade" id="basicModal" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Basic Modal</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Non omnis incidunt qui sed occaecati magni asperiores est mollitia. Soluta at et reprehenderit. Placeat autem numquam et fuga numquam. Tempora in facere consequatur sit dolor ipsum. Consequatur nemo amet incidunt est facilis. Dolorem neque recusandae quo sit molestias sint dignissimos.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End Basic Modal-->
+
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Disabled Backdrop</h5>
+              <p>You can disable the backdrop by adding <code>data-bs-backdrop="false"</code> to <code>.modal-dialog</code></p>
+
+              <!-- Disabled Backdrop Modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#disablebackdrop">
+                Launch Modal
+              </button>
+              <div class="modal fade" id="disablebackdrop" tabindex="-1" data-bs-backdrop="false">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Disabled Backdrop</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Non omnis incidunt qui sed occaecati magni asperiores est mollitia. Soluta at et reprehenderit. Placeat autem numquam et fuga numquam. Tempora in facere consequatur sit dolor ipsum. Consequatur nemo amet incidunt est facilis. Dolorem neque recusandae quo sit molestias sint dignissimos.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End Disabled Backdrop Modal-->
+
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Scrolling long content</h5>
+              <p>When modals become too long for the user’s viewport or device, they scroll independent of the page itself. You can also create a scrollable modal that allows scroll the modal body by adding <code>.modal-dialog-scrollable</code> to <code>.modal-dialog</code></p>
+
+              <!-- Scrolling Modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#scrollingModal">
+                Scrolling Modal
+              </button>
+              <div class="modal fade" id="scrollingModal" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Scrolling Modal</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="min-height: 1500px;">
+                      Non omnis incidunt qui sed occaecati magni asperiores est mollitia. Soluta at et reprehenderit. Placeat autem numquam et fuga numquam. Tempora in facere consequatur sit dolor ipsum. Consequatur nemo amet incidunt est facilis. Dolorem neque recusandae quo sit molestias sint dignissimos.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End Scrolling Modal-->
+
+              <!-- Modal Dialog Scrollable -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDialogScrollable">
+                Modal Dialog Scrollable
+              </button>
+              <div class="modal fade" id="modalDialogScrollable" tabindex="-1">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Modal Dialog Scrollable</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Non omnis incidunt qui sed occaecati magni asperiores est mollitia. Soluta at et reprehenderit. Placeat autem numquam et fuga numquam. Tempora in facere consequatur sit dolor ipsum. Consequatur nemo amet incidunt est facilis. Dolorem neque recusandae quo sit molestias sint dignissimos.
+                      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                      This content should appear at the bottom after you scroll.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End Modal Dialog Scrollable-->
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Vertically Centered</h5>
+              <p>Add <code>.modal-dialog-centered</code> to <code>.modal-dialog</code> to vertically center the modal.</p>
+
+              <!-- Vertically centered Modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verticalycentered">
+                Vertically centered
+              </button>
+              <div class="modal fade" id="verticalycentered" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Vertically Centered</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Non omnis incidunt qui sed occaecati magni asperiores est mollitia. Soluta at et reprehenderit. Placeat autem numquam et fuga numquam. Tempora in facere consequatur sit dolor ipsum. Consequatur nemo amet incidunt est facilis. Dolorem neque recusandae quo sit molestias sint dignissimos.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End Vertically centered Modal-->
+
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Modal Sizes</h5>
+              <p>Modals have three optional sizes, available via modifier classes to be placed on a <code>.modal-dialog</code>. These sizes kick in at certain breakpoints to avoid horizontal scrollbars on narrower viewports..</p>
+
+              <!-- Small Modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#smallModal">
+                Small Modal
+              </button>
+
+              <div class="modal fade" id="smallModal" tabindex="-1">
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Small Modal</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Non omnis incidunt qui sed occaecati magni asperiores est mollitia. Soluta at et reprehenderit. Placeat autem numquam et fuga numquam. Tempora in facere consequatur sit dolor ipsum. Consequatur nemo amet incidunt est facilis. Dolorem neque recusandae quo sit molestias sint dignissimos.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End Small Modal-->
+
+              <!-- Large Modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#largeModal">
+                Large Modal
+              </button>
+
+              <div class="modal fade" id="largeModal" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Large Modal</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Non omnis incidunt qui sed occaecati magni asperiores est mollitia. Soluta at et reprehenderit. Placeat autem numquam et fuga numquam. Tempora in facere consequatur sit dolor ipsum. Consequatur nemo amet incidunt est facilis. Dolorem neque recusandae quo sit molestias sint dignissimos.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End Large Modal-->
+
+              <!-- Extra Large Modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ExtralargeModal">
+                Extra Large Modal
+              </button>
+
+              <div class="modal fade" id="ExtralargeModal" tabindex="-1">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Extra Large Modal</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Non omnis incidunt qui sed occaecati magni asperiores est mollitia. Soluta at et reprehenderit. Placeat autem numquam et fuga numquam. Tempora in facere consequatur sit dolor ipsum. Consequatur nemo amet incidunt est facilis. Dolorem neque recusandae quo sit molestias sint dignissimos.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End Extra Large Modal-->
+
+              <!-- Full Screen Modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#fullscreenModal">
+                Full Screen Modal
+              </button>
+
+              <div class="modal fade" id="fullscreenModal" tabindex="-1">
+                <div class="modal-dialog modal-fullscreen">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Full Screen Modal</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Non omnis incidunt qui sed occaecati magni asperiores est mollitia. Soluta at et reprehenderit. Placeat autem numquam et fuga numquam. Tempora in facere consequatur sit dolor ipsum. Consequatur nemo amet incidunt est facilis. Dolorem neque recusandae quo sit molestias sint dignissimos.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End Full Screen Modal-->
+
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Disabled Animation</h5>
+              <p>For modals that simply appear rather than fade in to view, remove the <code>.fade</code> class from your <code>.modal</code> element </p>
+
+              <!-- Disabled Animation Modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#disabledAnimation">
+                Disabled Animation Modal
+              </button>
+              <div class="modal" id="disabledAnimation" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Disabled Animation Modal</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Non omnis incidunt qui sed occaecati magni asperiores est mollitia. Soluta at et reprehenderit. Placeat autem numquam et fuga numquam. Tempora in facere consequatur sit dolor ipsum. Consequatur nemo amet incidunt est facilis. Dolorem neque recusandae quo sit molestias sint dignissimos.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End Disabled Animation Modal-->
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+</div>
+
+
+<hr>
+
+<div class="container" id="spinners">
+
+  <center><h1 style="color: blue; text-transform: uppercase;">Spinners</h1></center><hr>
+
+  <h2>Spinners</h2>
+
+  <section class="section">
+    <div class="row">
+      <div class="col-lg-6">
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Border spinner</h5>
+            <p>Use the border spinners for a lightweight loading indicator.</p>
+
+            <!-- Border spinner -->
+            <div class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div><!-- End Border spinner -->
+
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Colors</h5>
+
+            <!-- Color spinners -->
+            <div class="spinner-border text-primary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-border text-secondary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-border text-success" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-border text-danger" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-border text-warning" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-border text-info" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-border text-light" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-border text-dark" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div><!-- End Color spinners -->
+
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Alignment</h5>
+            <p>Use flexbox utilities, float utilities, or text alignment utilities to place spinners exactly where you need them in any situation.</p>
+
+            <!-- Center aligned spinner -->
+            <div class="d-flex justify-content-center">
+              <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div><!-- End Center aligned spinner -->
+
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Buttons</h5>
+            <p>Use spinners within buttons to indicate an action is currently processing or taking place. You may also swap the text out of the spinner element and utilize button text as needed.</p>
+
+            <!-- Button spinners -->
+            <button class="btn btn-primary" type="button" disabled>
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              <span class="visually-hidden">Loading...</span>
+            </button>
+            <button class="btn btn-primary" type="button" disabled>
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Loading...
+            </button>
+
+            <button class="btn btn-primary" type="button" disabled>
+              <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+              <span class="visually-hidden">Loading...</span>
+            </button>
+            <button class="btn btn-primary" type="button" disabled>
+              <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+              Loading...
+            </button>
+            <!-- End Button spinners -->
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-6">
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Growing spinner</h5>
+            <p>If you don’t fancy a border spinner, switch to the grow spinner. While it doesn’t technically spin, it does repeatedly grow!</p>
+
+            <!-- Growing spinner -->
+            <div class="spinner-grow" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div><!-- End Growing spinner -->
+
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Growing Color spinners</h5>
+
+            <!-- Growing Color spinnersr -->
+            <div class="spinner-grow text-primary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-secondary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-success" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-danger" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-warning" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-info" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-light" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-dark" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div><!-- End Growing Color spinners -->
+
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Sizes</h5>
+            <p>Add <code>.spinner-border-sm</code> and <code>.spinner-grow-sm</code> to make a smaller spinner that can quickly be used within other components. Or, use custom CSS or inline styles to change the dimensions as needed.</p>
+
+            <!-- Sized spinners -->
+            <div class="spinner-border spinner-border-sm" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+
+            <div class="spinner-border" style="width: 30px; height: 30px;" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+
+            <div class="spinner-border" style="width: 40px; height: 40px;" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+
+            <div class="spinner-border" style="width: 50px; height: 50px;" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+
+            <div class="spinner-grow spinner-grow-sm" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+
+            <div class="spinner-grow" style="width: 30px; height: 30px;" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+
+            <div class="spinner-grow" style="width: 40px; height: 40px;" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+
+            <div class="spinner-grow" style="width: 50px; height: 50px;" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <!-- End Sized spinners -->
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div>
+
+
+
+<hr>
+
+
+
+<center><h1 style="color: #e01425; text-transform: uppercase;">--- Happy Coding ---</h1></center>
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+
